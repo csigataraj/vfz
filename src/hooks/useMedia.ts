@@ -32,8 +32,8 @@ const useMedia = (): {
       return new Promise((resolve) => {
         setTimeout(() => resolve(getFilteredMedia(query)), 1000);
       });
-    },
+      },//placeholder for backend call
   });
-}; //placeholder for backend call
+}; 
 
 export default useMedia;

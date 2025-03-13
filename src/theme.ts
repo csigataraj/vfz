@@ -16,6 +16,13 @@ const lightTheme = {
       900: '#202020',
     }, 
   },
+  breakpoints: {
+    sm: "400px",
+    md: "800px",
+    lg: "1000px",
+    xl: "1400px",
+    "2xl": "1800px",
+  },
 };
 
 const darkTheme = {
@@ -32,6 +39,13 @@ const darkTheme = {
       800: '#121212',
       900: '#111',
     },
+  },
+  breakpoints: {
+    sm: "400px",
+    md: "800px",
+    lg: "1000px",
+    xl: "1400px",
+    "2xl": "1800px",
   },
 };
 

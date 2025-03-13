@@ -10,14 +10,19 @@ const GenreSelector = () => {
 
   return (
     <Menu>
-      <MenuButton as={Button} rightIcon={<BsChevronDown />} marginLeft={2}>
+      <MenuButton
+        as={Button}
+        rightIcon={<BsChevronDown />}
+        marginLeft={{ base: 0, sm: 2 }}
+        marginTop={{ base: 2, sm: 0 }}
+      >
         Genre: {selectedGenre || "All"}
       </MenuButton>
       <MenuList>
         {genres.map((genre) => (
           <MenuItem
             onClick={() => {
-              setSelectedGenre(genre);
+              setSelectedGenre(genre === "All" ? "" : genre);
             }}
             key={genre}
           >

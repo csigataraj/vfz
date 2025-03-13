@@ -6,7 +6,7 @@ const FavoritesSwitch = () => {
   const toggleFavorite = useMediaQueryStore((s) => s.toggleFavorites);
 
   return (
-    <HStack marginRight={3}>
+    <HStack marginRight={{ base: 0, md: 3 }}>
       <Switch
         isChecked={showFavorites}
         onChange={() => toggleFavorite(!showFavorites)}

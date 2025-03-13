@@ -8,25 +8,23 @@ const MediaGrid = () => {
   const { favorites } = useFavoritesStore();
   const showFavorites = useMediaQueryStore((s) => s.query.showFavorites);
 
+  const filteredData = showFavorites
+    ? data?.filter((item) => Object.keys(favorites).includes(item.id))
+    : data;
+
+  if (!filteredData || filteredData.length === 0) return null;
+
   return (
     <SimpleGrid
       columns={{ sm: 1, md: 2, lg: 3, xl: 4 }}
       spacing={6}
       padding={"10px"}
     >
-      {showFavorites
-        ? data
-            ?.filter((item) => Object.keys(favorites).includes(item.id))
-            .map((item) => (
-              <GridItem key={item.id}>
-                <MediaCard media={item} />
-              </GridItem>
-            ))
-        : data?.map((item) => (
-            <GridItem key={item.id}>
-              <MediaCard media={item} />
-            </GridItem>
-          ))}
+      {filteredData?.map((item) => (
+        <GridItem key={item.id}>
+          <MediaCard media={item} />
+        </GridItem>
+      ))}
     </SimpleGrid>
   );
 };

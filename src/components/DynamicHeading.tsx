@@ -16,7 +16,9 @@ const DynamicHeading = () => {
       }
     }
   };
-  const heading = `${query.genre || ""} ${getType(query) || "Media"} list`;
+  const heading = `${(query.genre !== "All" && query.genre) || ""} ${
+    getType(query) || "Media"
+  } list`;
 
   return (
     <Heading as={"h1"} marginY={5} fontSize={"5xl"}>

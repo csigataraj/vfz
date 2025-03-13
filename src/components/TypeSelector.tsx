@@ -1,6 +1,6 @@
 import { Button, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 import { BsChevronDown } from "react-icons/bs";
-import useMediaQueryStore from "../store";
+import { useMediaQueryStore } from "../store";
 import { useState } from "react";
 
 const getType = (type: string) => {

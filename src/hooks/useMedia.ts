@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { media } from "../data/media";
-import useMediaQueryStore from "../store";
+import { useMediaQueryStore } from "../store";
 import { Media, MediaQuery } from "../interfaces/media";
 
 const getFilteredMedia = (query?: MediaQuery) => {

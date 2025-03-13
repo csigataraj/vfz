@@ -1,9 +1,12 @@
 import { GridItem, SimpleGrid } from "@chakra-ui/react";
 import MediaCard from "./MediaCard";
 import useMedia from "../hooks/useMedia";
+import { useFavoritesStore, useMediaQueryStore } from "../store";
 
 const MediaGrid = () => {
   const { data } = useMedia();
+  const { favorites } = useFavoritesStore();
+  const showFavorites = useMediaQueryStore((s) => s.query.showFavorites);
 
   return (
     <SimpleGrid
@@ -11,11 +14,19 @@ const MediaGrid = () => {
       spacing={6}
       padding={"10px"}
     >
-      {data?.map((item) => (
-        <GridItem key={item.id}>
-          <MediaCard media={item} />
-        </GridItem>
-      ))}
+      {showFavorites
+        ? data
+            ?.filter((item) => Object.keys(favorites).includes(item.id))
+            .map((item) => (
+              <GridItem key={item.id}>
+                <MediaCard media={item} />
+              </GridItem>
+            ))
+        : data?.map((item) => (
+            <GridItem key={item.id}>
+              <MediaCard media={item} />
+            </GridItem>
+          ))}
     </SimpleGrid>
   );
 };

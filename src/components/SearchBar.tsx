@@ -1,8 +1,8 @@
 import { Badge, Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
 import { useRef } from "react";
 import { BsSearch, BsXCircleFill } from "react-icons/bs";
-import useMediaQueryStore from "../store";
 import { useNavigate } from "react-router-dom";
+import { useMediaQueryStore } from "../store";
 
 const SearchBar = () => {
   const ref = useRef<HTMLInputElement>(null);

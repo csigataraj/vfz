@@ -1,8 +1,7 @@
 import { Button, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 import { BsChevronDown } from "react-icons/bs";
-import useMediaQueryStore from "../store";
-import { useState } from "react";
 import useGenres from "../hooks/useGenres";
+import { useMediaQueryStore } from "../store";
 
 const GenreSelector = () => {
   const genres = ["All", ...useGenres()];
@@ -11,7 +10,7 @@ const GenreSelector = () => {
 
   return (
     <Menu>
-      <MenuButton as={Button} rightIcon={<BsChevronDown />}>
+      <MenuButton as={Button} rightIcon={<BsChevronDown />} marginLeft={2}>
         Genre: {selectedGenre || "All"}
       </MenuButton>
       <MenuList>

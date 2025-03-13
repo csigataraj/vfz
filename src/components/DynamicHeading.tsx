@@ -1,6 +1,6 @@
 import { Heading } from "@chakra-ui/react";
-import useMediaQueryStore from "../store";
 import { MediaQuery } from "../interfaces/media";
+import { useMediaQueryStore } from "../store";
 
 const DynamicHeading = () => {
   const query = useMediaQueryStore((s) => s.query);

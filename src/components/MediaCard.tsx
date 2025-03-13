@@ -12,7 +12,7 @@ const MediaCard = ({ media }: { media: Media }) => {
   return (
     <Card backgroundColor={colorMode === "dark" ? "gray.700" : "gray.100"}>
       <HStack justifyContent={"space-between"}>
-        <Link to={`/media/${media.id}`}>
+        <Link to={`/${media.id}`}>
           <CardBody>{media.title}</CardBody>
         </Link>
         {isFavorite ? (

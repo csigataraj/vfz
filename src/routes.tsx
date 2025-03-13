@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       {
-        path: "/media/:id",
+        path: "/:id",
         element: <MediaDetailPage />,
       },
     ],

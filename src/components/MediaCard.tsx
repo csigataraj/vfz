@@ -18,6 +18,7 @@ const MediaCard = ({ media }: { media: Media }) => {
         {isFavorite ? (
           <FaStar
             color="red"
+            size={25}
             onClick={() => toggleFavorite(media.id)}
             style={{ marginRight: 8 }}
           />
@@ -25,6 +26,7 @@ const MediaCard = ({ media }: { media: Media }) => {
           <FaRegStar
             onClick={() => toggleFavorite(media.id)}
             style={{ marginRight: 8 }}
+            size={25}
           />
         )}
       </HStack>

@@ -2,15 +2,19 @@ import { render, screen } from "@testing-library/react";
 import { createMemoryRouter, RouterProvider } from "react-router-dom";
 import router from "./router";
 
-jest.mock("../pages/HomePage", () => () => (
-  <div data-testid="home-page">Home Page</div>
-));
-jest.mock("../pages/ErrorPage", () => () => (
-  <div data-testid="error-page">Error Page</div>
-));
-jest.mock("../pages/MediaDetailPage", () => () => (
-  <div data-testid="media-detail-page">Media Detail Page</div>
-));
+function HomePage() {
+  return <div data-testid="home-page">Home Page</div>;
+}
+function ErrorPage() {
+  return <div data-testid="error-page">Error Page</div>;
+}
+function MediaDetailPage() {
+  return <div data-testid="media-detail-page">Media Detail Page</div>;
+}
+
+jest.mock("../pages/HomePage", () => HomePage);
+jest.mock("../pages/ErrorPage", () => ErrorPage);
+jest.mock("../pages/MediaDetailPage", () => MediaDetailPage);
 
 describe("Router Configuration", () => {
   it("renders the Layout and HomePage for the root route", () => {

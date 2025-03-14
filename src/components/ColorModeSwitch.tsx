@@ -1,4 +1,4 @@
-import { HStack, Switch, Text, useColorMode } from "@chakra-ui/react";
+import { HStack, Switch, useColorMode } from "@chakra-ui/react";
 import { MdModeNight } from "react-icons/md";
 import { WiDaySunny } from "react-icons/wi";
 

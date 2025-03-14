@@ -1,44 +1,45 @@
+// eslint-disable @typescript-eslint/no-require-imports
 import { renderHook } from "@testing-library/react";
 import { useMediaQueryStore } from "../store";
 import useMedia from "./useMedia";
 import { MediaQuery } from "../interfaces/media";
+import { useQuery, UseQueryResult } from "@tanstack/react-query";
 
 jest.mock("@tanstack/react-query", () => ({
   useQuery: jest.fn(),
 }));
 
+const mockMedia = [
+  {
+    id: "1",
+    title: "Movie 1",
+    genre: "Action",
+    type: "movie",
+    description: "",
+  },
+  {
+    id: "2",
+    title: "Movie 2",
+    genre: "Drama",
+    type: "movie",
+    description: "",
+  },
+  {
+    id: "3",
+    title: "Series 1",
+    genre: "Action",
+    type: "series",
+    description: "",
+  },
+  {
+    id: "4",
+    title: "Book 1",
+    genre: "Fantasy",
+    type: "book",
+    description: "",
+  },
+];
 describe("useMedia Hook", () => {
-  const mockMedia = [
-    {
-      id: "1",
-      title: "Movie 1",
-      genre: "Action",
-      type: "movie",
-      description: "",
-    },
-    {
-      id: "2",
-      title: "Movie 2",
-      genre: "Drama",
-      type: "movie",
-      description: "",
-    },
-    {
-      id: "3",
-      title: "Series 1",
-      genre: "Action",
-      type: "series",
-      description: "",
-    },
-    {
-      id: "4",
-      title: "Book 1",
-      genre: "Fantasy",
-      type: "book",
-      description: "",
-    },
-  ];
-
   beforeEach(() => {
     jest.clearAllMocks();
 
@@ -53,11 +54,23 @@ describe("useMedia Hook", () => {
       ...mediaQueryStore,
     });
 
-    jest
-      .mocked(require("@tanstack/react-query").useQuery)
-      .mockImplementation(() => ({
-        data: mockMedia,
-      }));
+    jest.mocked(useQuery).mockImplementation(
+      () =>
+        ({
+          data: mockMedia,
+          isLoading: false,
+          isError: false,
+          error: null,
+        }) as UseQueryResult<
+          {
+            id: string;
+            title: string;
+            genre: string;
+            type: string;
+            description: string;
+          }[]
+        >
+    );
   });
 
   it("should filter media by genre correctly", async () => {
@@ -70,11 +83,23 @@ describe("useMedia Hook", () => {
       ...mediaQueryStore,
     });
 
-    jest
-      .mocked(require("@tanstack/react-query").useQuery)
-      .mockImplementation(() => ({
-        data: mockMedia.filter((item) => item.genre === genreQuery.genre),
-      }));
+    jest.mocked(useQuery).mockImplementation(
+      () =>
+        ({
+          data: mockMedia.filter((item) => item.genre === genreQuery.genre),
+          isLoading: false,
+          isError: false,
+          error: null,
+        }) as UseQueryResult<
+          {
+            id: string;
+            title: string;
+            genre: string;
+            type: string;
+            description: string;
+          }[]
+        >
+    );
 
     const { result } = renderHook(() => useMedia());
 
@@ -106,13 +131,25 @@ describe("useMedia Hook", () => {
       ...mediaQueryStore,
     });
 
-    jest
-      .mocked(require("@tanstack/react-query").useQuery)
-      .mockImplementation(() => ({
-        data: mockMedia.filter((item) =>
-          item.title.includes(searchTextQuery.searchText as string)
-        ),
-      }));
+    jest.mocked(useQuery).mockImplementation(
+      () =>
+        ({
+          data: mockMedia.filter((item) =>
+            item.title.includes(searchTextQuery.searchText as string)
+          ),
+          isLoading: false,
+          isError: false,
+          error: null,
+        }) as UseQueryResult<
+          {
+            id: string;
+            title: string;
+            genre: string;
+            type: string;
+            description: string;
+          }[]
+        >
+    );
 
     const { result } = renderHook(() => useMedia());
 
@@ -144,11 +181,23 @@ describe("useMedia Hook", () => {
       ...mediaQueryStore,
     });
 
-    jest
-      .mocked(require("@tanstack/react-query").useQuery)
-      .mockImplementation(() => ({
-        data: mockMedia.filter((item) => item.type === typeQuery.type),
-      }));
+    jest.mocked(useQuery).mockImplementation(
+      () =>
+        ({
+          data: mockMedia.filter((item) => item.type === typeQuery.type),
+          isLoading: false,
+          isError: false,
+          error: null,
+        }) as UseQueryResult<
+          {
+            id: string;
+            title: string;
+            genre: string;
+            type: string;
+            description: string;
+          }[]
+        >
+    );
 
     const { result } = renderHook(() => useMedia());
 
@@ -173,15 +222,27 @@ describe("useMedia Hook", () => {
       ...mediaQueryStore,
     });
 
-    jest
-      .mocked(require("@tanstack/react-query").useQuery)
-      .mockImplementation(() => ({
-        data: mockMedia.filter(
-          (item) =>
-            item.genre === combinedQuery.genre &&
-            item.title.includes(combinedQuery.searchText as string)
-        ),
-      }));
+    jest.mocked(useQuery).mockImplementation(
+      () =>
+        ({
+          data: mockMedia.filter(
+            (item) =>
+              item.genre === combinedQuery.genre &&
+              item.title.includes(combinedQuery.searchText as string)
+          ),
+          isLoading: false,
+          isError: false,
+          error: null,
+        }) as UseQueryResult<
+          {
+            id: string;
+            title: string;
+            genre: string;
+            type: string;
+            description: string;
+          }[]
+        >
+    );
 
     const { result } = renderHook(() => useMedia());
 

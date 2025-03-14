@@ -1,8 +1,4 @@
-import {
-  getDynamicHeading,
-  getTypeForDynamicHeading,
-  typeDictionary,
-} from "./utils";
+import { getDynamicHeading, getTypeForDynamicHeading } from "./utils";
 import { MediaQuery } from "../interfaces/media";
 
 describe("Media Query Utilities", () => {

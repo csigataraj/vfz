@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, useColorMode } from "@chakra-ui/react";
 import ColorModeSwitch from "./ColorModeSwitch";
 
 jest.mock("@chakra-ui/react", () => {
@@ -11,11 +11,12 @@ jest.mock("@chakra-ui/react", () => {
 });
 
 describe("ColorModeSwitch Component", () => {
-  const mockUseColorMode = require("@chakra-ui/react").useColorMode;
+  const mockUseColorMode = jest.mocked(useColorMode);
   it("should render with the light mode icon (moon) when colorMode is light", () => {
     mockUseColorMode.mockReturnValue({
       colorMode: "light",
       toggleColorMode: jest.fn(),
+      setColorMode: jest.fn(),
     });
 
     render(
@@ -32,6 +33,7 @@ describe("ColorModeSwitch Component", () => {
     mockUseColorMode.mockReturnValue({
       colorMode: "dark",
       toggleColorMode: jest.fn(),
+      setColorMode: jest.fn(),
     });
 
     render(
@@ -49,6 +51,7 @@ describe("ColorModeSwitch Component", () => {
     mockUseColorMode.mockReturnValue({
       colorMode: "light",
       toggleColorMode: toggleColorModeMock,
+      setColorMode: jest.fn(),
     });
 
     render(

@@ -1,7 +1,6 @@
 import useMediaDetails from "../hooks/useMediaDetails";
 import { Box, Heading, Text } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
-import ErrorPage from "./ErrorPage";
 
 const MediaDetailPage = () => {
   const { id } = useParams();

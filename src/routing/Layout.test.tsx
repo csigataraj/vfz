@@ -2,9 +2,11 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import Layout from "./Layout";
 
-jest.mock("../components/NavBar", () => {
-  return () => <div data-testid="mocked-nav-bar">Mocked NavBar</div>;
-});
+function NavBar() {
+  return <div data-testid="mocked-nav-bar">Mocked NavBar</div>;
+}
+
+jest.mock("../components/NavBar", () => NavBar);
 
 describe("Layout Component", () => {
   it("renders the NavBar component", () => {

@@ -4,6 +4,14 @@ import MediaGrid from "./MediaGrid";
 import { useFavoritesStore, useMediaQueryStore } from "../store";
 import { MemoryRouter } from "react-router-dom"; // Import MemoryRouter for testing context
 
+function MediaCard({ media }: { media: { id: string; name: string } }) {
+  return (
+    <div role="griditem">
+      <a href={`/${media.id}`}>{media.name}</a>
+    </div>
+  );
+}
+
 jest.mock("../hooks/useMedia", () => jest.fn());
 
 jest.mock("../store", () => ({
@@ -15,13 +23,7 @@ jest.mock("../store", () => ({
   })),
 }));
 
-jest.mock("./MediaCard", () => {
-  return ({ media }: { media: { id: string; name: string } }) => (
-    <div role="griditem">
-      <a href={`/${media.id}`}>{media.name}</a>
-    </div>
-  );
-});
+jest.mock("./MediaCard", () => MediaCard);
 
 describe("MediaGrid Component", () => {
   let mockFavorites: Record<string, boolean>;

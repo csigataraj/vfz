@@ -3,10 +3,10 @@ name: CI Workflow
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   build-and-test:
@@ -32,3 +32,6 @@ jobs:
 
       - name: Build project
         run: npm run build
+
+      - name: Run Prettier
+        run: npm run format

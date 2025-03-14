@@ -10,13 +10,17 @@ const MediaCard = ({ media }: { media: Media }) => {
   const isFavorite = favorites[media.id] || false;
 
   return (
-    <Card backgroundColor={colorMode === "dark" ? "gray.700" : "gray.100"}>
+    <Card
+      role="region"
+      backgroundColor={colorMode === "dark" ? "gray.700" : "gray.100"}
+    >
       <HStack justifyContent={"space-between"}>
-        <Link to={`/${media.id}`}>
+        <Link to={`/${media.id}`} aria-label={media.title}>
           <CardBody>{media.title}</CardBody>
         </Link>
         {isFavorite ? (
           <FaStar
+            role="img"
             color="red"
             size={25}
             onClick={() => toggleFavorite(media.id)}
@@ -24,6 +28,7 @@ const MediaCard = ({ media }: { media: Media }) => {
           />
         ) : (
           <FaRegStar
+            role="img"
             onClick={() => toggleFavorite(media.id)}
             style={{ marginRight: 8 }}
             size={25}

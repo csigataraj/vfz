@@ -12,6 +12,7 @@ const SearchBar = () => {
 
   return (
     <form
+      data-testid="search-form"
       style={{ width: "100%" }}
       onSubmit={(event) => {
         if (ref.current) {
@@ -33,6 +34,7 @@ const SearchBar = () => {
       </InputGroup>
       {query.searchText && (
         <Badge
+          role="status"
           colorScheme="blue"
           mt={2}
           marginLeft={1}
@@ -45,6 +47,7 @@ const SearchBar = () => {
         >
           {query.searchText}
           <BsXCircleFill
+            title="Close"
             onClick={() => {
               search("");
             }}

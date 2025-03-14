@@ -16,6 +16,7 @@ const MediaGrid = () => {
 
   return (
     <SimpleGrid
+      role="grid"
       columns={{ sm: 1, md: 2, lg: 3, xl: 4 }}
       spacing={6}
       padding={"10px"}

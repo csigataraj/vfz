@@ -16,7 +16,7 @@ const GenreSelector = () => {
         marginLeft={{ base: 0, sm: 2 }}
         marginTop={{ base: 2, sm: 0 }}
       >
-        Genre: {selectedGenre || "All"}
+        {`Genre: ${selectedGenre || "All"}`}
       </MenuButton>
       <MenuList>
         {genres.map((genre) => (

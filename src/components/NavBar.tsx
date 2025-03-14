@@ -9,6 +9,7 @@ const NavBar = () => {
       <Link to="/">
         <Image
           src="./assets/star.svg"
+          alt="Star icon"
           boxSize={{ base: "20px", md: "40px" }}
           objectFit={"cover"}
         ></Image>

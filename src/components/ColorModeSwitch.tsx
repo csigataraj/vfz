@@ -12,9 +12,9 @@ const ColorModeSwitch = () => {
         colorScheme="green"
       />
       {colorMode === "dark" ? (
-        <WiDaySunny size={30} />
+        <WiDaySunny size={30} data-testid="dark-mode-icon" />
       ) : (
-        <MdModeNight size={30} />
+        <MdModeNight size={30} data-testid="light-mode-icon" />
       )}
     </HStack>
   );

@@ -1,7 +1,7 @@
-import { useQuery } from "@tanstack/react-query";
-import { media } from "../data/media";
-import { useMediaQueryStore } from "../store";
-import { Media, MediaQuery } from "../interfaces/media";
+import { useQuery } from '@tanstack/react-query';
+import { media } from '../data/media';
+import { useMediaQueryStore } from '../store';
+import { Media, MediaQuery } from '../interfaces/media';
 
 const getFilteredMedia = (query?: MediaQuery) => {
   let result = media;
@@ -27,7 +27,7 @@ const useMedia = (): {
   const query = useMediaQueryStore((state) => state.query);
 
   return useQuery<Media[]>({
-    queryKey: ["media", query],
+    queryKey: ['media', query],
     queryFn: async () => {
       return new Promise((resolve) => {
         setTimeout(() => resolve(getFilteredMedia(query)), 1000);

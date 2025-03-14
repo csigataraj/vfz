@@ -1,5 +1,5 @@
-import { HStack, Switch, Text } from "@chakra-ui/react";
-import { useMediaQueryStore } from "../store";
+import { HStack, Switch, Text } from '@chakra-ui/react';
+import { useMediaQueryStore } from '../store';
 
 const FavoritesSwitch = () => {
   const showFavorites = useMediaQueryStore((s) => s.query.showFavorites);

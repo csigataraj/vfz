@@ -1,20 +1,20 @@
-import { render, screen, fireEvent } from "@testing-library/react";
-import { ChakraProvider, useColorMode } from "@chakra-ui/react";
-import ColorModeSwitch from "./ColorModeSwitch";
+import { render, screen, fireEvent } from '@testing-library/react';
+import { ChakraProvider, useColorMode } from '@chakra-ui/react';
+import ColorModeSwitch from './ColorModeSwitch';
 
-jest.mock("@chakra-ui/react", () => {
-  const originalModule = jest.requireActual("@chakra-ui/react");
+jest.mock('@chakra-ui/react', () => {
+  const originalModule = jest.requireActual('@chakra-ui/react');
   return {
     ...originalModule,
     useColorMode: jest.fn(),
   };
 });
 
-describe("ColorModeSwitch Component", () => {
+describe('ColorModeSwitch Component', () => {
   const mockUseColorMode = jest.mocked(useColorMode);
-  it("should render with the light mode icon (moon) when colorMode is light", () => {
+  it('should render with the light mode icon (moon) when colorMode is light', () => {
     mockUseColorMode.mockReturnValue({
-      colorMode: "light",
+      colorMode: 'light',
       toggleColorMode: jest.fn(),
       setColorMode: jest.fn(),
     });
@@ -25,13 +25,13 @@ describe("ColorModeSwitch Component", () => {
       </ChakraProvider>
     );
 
-    expect(screen.getByTestId("light-mode-icon")).toBeInTheDocument();
-    expect(screen.queryByTestId("dark-mode-icon")).not.toBeInTheDocument();
+    expect(screen.getByTestId('light-mode-icon')).toBeInTheDocument();
+    expect(screen.queryByTestId('dark-mode-icon')).not.toBeInTheDocument();
   });
 
-  it("should render with the dark mode icon (sun) when colorMode is dark", () => {
+  it('should render with the dark mode icon (sun) when colorMode is dark', () => {
     mockUseColorMode.mockReturnValue({
-      colorMode: "dark",
+      colorMode: 'dark',
       toggleColorMode: jest.fn(),
       setColorMode: jest.fn(),
     });
@@ -42,14 +42,14 @@ describe("ColorModeSwitch Component", () => {
       </ChakraProvider>
     );
 
-    expect(screen.getByTestId("dark-mode-icon")).toBeInTheDocument();
-    expect(screen.queryByTestId("light-mode-icon")).not.toBeInTheDocument();
+    expect(screen.getByTestId('dark-mode-icon')).toBeInTheDocument();
+    expect(screen.queryByTestId('light-mode-icon')).not.toBeInTheDocument();
   });
 
-  it("should call toggleColorMode when the switch is clicked", () => {
+  it('should call toggleColorMode when the switch is clicked', () => {
     const toggleColorModeMock = jest.fn();
     mockUseColorMode.mockReturnValue({
-      colorMode: "light",
+      colorMode: 'light',
       toggleColorMode: toggleColorModeMock,
       setColorMode: jest.fn(),
     });
@@ -60,7 +60,7 @@ describe("ColorModeSwitch Component", () => {
       </ChakraProvider>
     );
 
-    const switchElement = screen.getByRole("checkbox");
+    const switchElement = screen.getByRole('checkbox');
     fireEvent.click(switchElement);
 
     expect(toggleColorModeMock).toHaveBeenCalledTimes(1);

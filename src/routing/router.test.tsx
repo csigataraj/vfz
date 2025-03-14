@@ -1,6 +1,6 @@
-import { render, screen } from "@testing-library/react";
-import { createMemoryRouter, RouterProvider } from "react-router-dom";
-import router from "./router";
+import { render, screen } from '@testing-library/react';
+import { createMemoryRouter, RouterProvider } from 'react-router-dom';
+import router from './router';
 
 function HomePage() {
   return <div data-testid="home-page">Home Page</div>;
@@ -12,38 +12,38 @@ function MediaDetailPage() {
   return <div data-testid="media-detail-page">Media Detail Page</div>;
 }
 
-jest.mock("../pages/HomePage", () => HomePage);
-jest.mock("../pages/ErrorPage", () => ErrorPage);
-jest.mock("../pages/MediaDetailPage", () => MediaDetailPage);
+jest.mock('../pages/HomePage', () => HomePage);
+jest.mock('../pages/ErrorPage', () => ErrorPage);
+jest.mock('../pages/MediaDetailPage', () => MediaDetailPage);
 
-describe("Router Configuration", () => {
-  it("renders the Layout and HomePage for the root route", () => {
+describe('Router Configuration', () => {
+  it('renders the Layout and HomePage for the root route', () => {
     const memoryRouter = createMemoryRouter(router.routes, {
-      initialEntries: ["/"],
+      initialEntries: ['/'],
     });
 
     render(<RouterProvider router={memoryRouter} />);
 
-    expect(screen.getByTestId("home-page")).toBeInTheDocument();
+    expect(screen.getByTestId('home-page')).toBeInTheDocument();
   });
 
-  it("renders the Layout and MediaDetailPage for a valid id route", () => {
+  it('renders the Layout and MediaDetailPage for a valid id route', () => {
     const memoryRouter = createMemoryRouter(router.routes, {
-      initialEntries: ["/123"],
+      initialEntries: ['/123'],
     });
 
     render(<RouterProvider router={memoryRouter} />);
 
-    expect(screen.getByTestId("media-detail-page")).toBeInTheDocument();
+    expect(screen.getByTestId('media-detail-page')).toBeInTheDocument();
   });
 
-  it("renders the ErrorPage for an invalid route", () => {
+  it('renders the ErrorPage for an invalid route', () => {
     const memoryRouter = createMemoryRouter(router.routes, {
-      initialEntries: ["/unknown/route"],
+      initialEntries: ['/unknown/route'],
     });
 
     render(<RouterProvider router={memoryRouter} />);
 
-    expect(screen.getByTestId("error-page")).toBeInTheDocument();
+    expect(screen.getByTestId('error-page')).toBeInTheDocument();
   });
 });

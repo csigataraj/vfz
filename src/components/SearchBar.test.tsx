@@ -1,20 +1,20 @@
-import { render, screen, fireEvent } from "@testing-library/react";
-import { useNavigate } from "react-router-dom";
-import { useMediaQueryStore } from "../store";
-import SearchBar from "./SearchBar";
+import { render, screen, fireEvent } from '@testing-library/react';
+import { useNavigate } from 'react-router-dom';
+import { useMediaQueryStore } from '../store';
+import SearchBar from './SearchBar';
 
-jest.mock("../store", () => ({
-  useMediaQueryStore: jest.requireActual("zustand").create(() => ({
-    query: { searchText: "" },
+jest.mock('../store', () => ({
+  useMediaQueryStore: jest.requireActual('zustand').create(() => ({
+    query: { searchText: '' },
     search: jest.fn(),
   })),
 }));
 
-jest.mock("react-router-dom", () => ({
+jest.mock('react-router-dom', () => ({
   useNavigate: jest.fn(),
 }));
 
-describe("SearchBar Component", () => {
+describe('SearchBar Component', () => {
   let mockSearch: jest.Mock;
   let mockNavigate: jest.Mock;
 
@@ -30,54 +30,54 @@ describe("SearchBar Component", () => {
     store.search = mockSearch;
     useMediaQueryStore.setState({
       ...store,
-      query: { searchText: "" },
+      query: { searchText: '' },
     });
     jest.clearAllMocks();
   });
 
-  it("should render the input field initially without badge", () => {
+  it('should render the input field initially without badge', () => {
     render(<SearchBar />);
     const input = screen.getByPlaceholderText(
-      "Search media"
+      'Search media'
     ) as HTMLInputElement;
     expect(input).toBeInTheDocument();
-    expect(input.value).toBe("");
-    expect(screen.queryByRole("status")).not.toBeInTheDocument();
+    expect(input.value).toBe('');
+    expect(screen.queryByRole('status')).not.toBeInTheDocument();
   });
 
   it("should call search with the input text and navigate to '/' on form submission", () => {
     render(<SearchBar />);
     const input = screen.getByPlaceholderText(
-      "Search media"
+      'Search media'
     ) as HTMLInputElement;
-    const form = screen.getByTestId("search-form");
-    fireEvent.change(input, { target: { value: "test media" } });
+    const form = screen.getByTestId('search-form');
+    fireEvent.change(input, { target: { value: 'test media' } });
     fireEvent.submit(form);
     expect(mockSearch).toHaveBeenCalledTimes(1);
-    expect(mockSearch).toHaveBeenCalledWith("test media");
+    expect(mockSearch).toHaveBeenCalledWith('test media');
     expect(mockNavigate).toHaveBeenCalledTimes(1);
-    expect(mockNavigate).toHaveBeenCalledWith("/");
+    expect(mockNavigate).toHaveBeenCalledWith('/');
   });
 
-  it("should render the badge when query.searchText exists and show its text", () => {
+  it('should render the badge when query.searchText exists and show its text', () => {
     useMediaQueryStore.setState({
-      query: { searchText: "test badge" },
+      query: { searchText: 'test badge' },
     });
     render(<SearchBar />);
-    const badge = screen.getByRole("status");
+    const badge = screen.getByRole('status');
     expect(badge).toBeInTheDocument();
-    expect(badge).toHaveTextContent("test badge");
+    expect(badge).toHaveTextContent('test badge');
   });
 
-  it("should call search with an empty string when the badge close button is clicked", () => {
+  it('should call search with an empty string when the badge close button is clicked', () => {
     useMediaQueryStore.setState({
-      query: { searchText: "test badge" },
+      query: { searchText: 'test badge' },
     });
     render(<SearchBar />);
-    const closeButton = screen.getByTitle("Close");
+    const closeButton = screen.getByTitle('Close');
     fireEvent.click(closeButton);
     expect(mockSearch).toHaveBeenCalledTimes(1);
-    expect(mockSearch).toHaveBeenCalledWith("");
-    expect(screen.queryByRole("status")).not.toBeInTheDocument();
+    expect(mockSearch).toHaveBeenCalledWith('');
+    expect(screen.queryByRole('status')).not.toBeInTheDocument();
   });
 });

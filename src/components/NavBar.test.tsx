@@ -1,8 +1,8 @@
-import { render, screen } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom"; // Provide routing context
-import NavBar from "./NavBar"; // Import NavBar component
+import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom'; // Provide routing context
+import NavBar from './NavBar'; // Import NavBar component
 
-describe("NavBar Component", () => {
+describe('NavBar Component', () => {
   it("should render the clickable logo and link to '/'", () => {
     render(
       <MemoryRouter>
@@ -10,16 +10,16 @@ describe("NavBar Component", () => {
       </MemoryRouter>
     );
 
-    const logo = screen.getByAltText("Star icon"); // Query by accessible `alt` text
+    const logo = screen.getByAltText('Star icon'); // Query by accessible `alt` text
     expect(logo).toBeInTheDocument();
-    expect(logo).toHaveAttribute("src", "./assets/star.svg");
+    expect(logo).toHaveAttribute('src', './assets/star.svg');
 
-    const link = screen.getByRole("link");
+    const link = screen.getByRole('link');
     expect(link).toBeInTheDocument();
-    expect(link).toHaveAttribute("href", "/");
+    expect(link).toHaveAttribute('href', '/');
   });
 
-  it("should render the `SearchBar` component", () => {
+  it('should render the `SearchBar` component', () => {
     render(
       <MemoryRouter>
         <NavBar />
@@ -31,7 +31,7 @@ describe("NavBar Component", () => {
     expect(searchBar).toBeInTheDocument();
   });
 
-  it("should render the `ColorModeSwitch` component", () => {
+  it('should render the `ColorModeSwitch` component', () => {
     render(
       <MemoryRouter>
         <NavBar />
@@ -39,11 +39,11 @@ describe("NavBar Component", () => {
     );
 
     // Check if ColorModeSwitch is rendering via its expected structure
-    const toggle = screen.getByRole("checkbox");
+    const toggle = screen.getByRole('checkbox');
     expect(toggle).toBeInTheDocument();
   });
 
-  it("should apply layout properties to the `HStack` container", () => {
+  it('should apply layout properties to the `HStack` container', () => {
     const { container } = render(
       <MemoryRouter>
         <NavBar />
@@ -51,9 +51,9 @@ describe("NavBar Component", () => {
     );
 
     // Check that HStack spacing and padding are applied
-    const hStack = container.querySelector(".chakra-stack");
+    const hStack = container.querySelector('.chakra-stack');
     expect(hStack).toBeInTheDocument();
-    expect(hStack).toHaveStyle("padding: 10px"); // Matches NavBar props
-    expect(hStack).toHaveStyle("margin-bottom: 4px"); // Matches NavBar props
+    expect(hStack).toHaveStyle('padding: 10px'); // Matches NavBar props
+    expect(hStack).toHaveStyle('margin-bottom: 4px'); // Matches NavBar props
   });
 });

@@ -1,4 +1,4 @@
-import { ColorModeContextType, extendTheme } from "@chakra-ui/react";
+import { ColorModeContextType, extendTheme } from '@chakra-ui/react';
 
 // Define your light and dark colors
 const lightTheme = {
@@ -14,14 +14,14 @@ const lightTheme = {
       700: '#404040',
       800: '#303030',
       900: '#202020',
-    }, 
+    },
   },
   breakpoints: {
-    sm: "400px",
-    md: "800px",
-    lg: "1000px",
-    xl: "1400px",
-    "2xl": "1800px",
+    sm: '400px',
+    md: '800px',
+    lg: '1000px',
+    xl: '1400px',
+    '2xl': '1800px',
   },
 };
 
@@ -41,27 +41,27 @@ const darkTheme = {
     },
   },
   breakpoints: {
-    sm: "400px",
-    md: "800px",
-    lg: "1000px",
-    xl: "1400px",
-    "2xl": "1800px",
+    sm: '400px',
+    md: '800px',
+    lg: '1000px',
+    xl: '1400px',
+    '2xl': '1800px',
   },
 };
 
 // Extend the theme by combining both themes
 const theme = extendTheme({
   config: {
-    initialColorMode: "dark", // Set the initial color mode, can be "light" or "dark"
+    initialColorMode: 'dark', // Set the initial color mode, can be "light" or "dark"
     useSystemColorMode: false, // Set to true to use system preference
   },
   styles: {
-      global: (props:ColorModeContextType) => ({
-          body: {
-              bg: props.colorMode === "dark" ? "gray.800" : "gray.50",
-              color: props.colorMode === "dark" ? "white" : "black",
-          },
-      }),
+    global: (props: ColorModeContextType) => ({
+      body: {
+        bg: props.colorMode === 'dark' ? 'gray.800' : 'gray.50',
+        color: props.colorMode === 'dark' ? 'white' : 'black',
+      },
+    }),
   },
   ...lightTheme,
   ...darkTheme,

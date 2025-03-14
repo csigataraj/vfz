@@ -1,7 +1,7 @@
-import { HStack, Image } from "@chakra-ui/react";
-import ColorModeSwitch from "./ColorModeSwitch";
-import SearchBar from "./SearchBar";
-import { Link } from "react-router-dom";
+import { HStack, Image } from '@chakra-ui/react';
+import ColorModeSwitch from './ColorModeSwitch';
+import SearchBar from './SearchBar';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
@@ -10,8 +10,8 @@ const NavBar = () => {
         <Image
           src="./assets/star.svg"
           alt="Star icon"
-          boxSize={{ base: "20px", md: "40px" }}
-          objectFit={"cover"}
+          boxSize={{ base: '20px', md: '40px' }}
+          objectFit={'cover'}
         ></Image>
       </Link>
       <SearchBar />

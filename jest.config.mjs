@@ -6,5 +6,5 @@ export default {
     '^.+\\.jsx?$': 'babel-jest', // Transpile JavaScript or JSX files
   },
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
-  setupFilesAfterEnv: ['<rootDir>/setupTests.ts']
+  setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
 };

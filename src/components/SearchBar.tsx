@@ -1,8 +1,8 @@
-import { Badge, Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
-import { useRef } from "react";
-import { BsSearch, BsXCircleFill } from "react-icons/bs";
-import { useNavigate } from "react-router-dom";
-import { useMediaQueryStore } from "../store";
+import { Badge, Input, InputGroup, InputLeftElement } from '@chakra-ui/react';
+import { useRef } from 'react';
+import { BsSearch, BsXCircleFill } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
+import { useMediaQueryStore } from '../store';
 
 const SearchBar = () => {
   const ref = useRef<HTMLInputElement>(null);
@@ -13,12 +13,12 @@ const SearchBar = () => {
   return (
     <form
       data-testid="search-form"
-      style={{ width: "100%" }}
+      style={{ width: '100%' }}
       onSubmit={(event) => {
         if (ref.current) {
           search(ref.current.value);
-          ref.current.value = "";
-          navigate("/");
+          ref.current.value = '';
+          navigate('/');
         }
         event.preventDefault();
       }}
@@ -31,7 +31,7 @@ const SearchBar = () => {
           ref={ref}
           borderRadius={20}
           placeholder="Search media"
-          variant={"filled"}
+          variant={'filled'}
         />
       </InputGroup>
       {query.searchText && (
@@ -41,20 +41,20 @@ const SearchBar = () => {
           mt={2}
           marginLeft={1}
           borderRadius={5}
-          position={"absolute"}
+          position={'absolute'}
           paddingX={2}
           paddingY={1}
-          display={"flex"}
-          alignItems={"center"}
+          display={'flex'}
+          alignItems={'center'}
         >
           {query.searchText}
           <BsXCircleFill
             title="Close"
             onClick={() => {
-              search("");
+              search('');
             }}
-            cursor={"pointer"}
-            style={{ marginLeft: "8px" }}
+            cursor={'pointer'}
+            style={{ marginLeft: '8px' }}
           />
         </Badge>
       )}

@@ -1,8 +1,8 @@
-import { Card, CardBody, HStack, useColorMode } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
-import { Media } from "../interfaces/media";
-import { useFavoritesStore } from "../store";
-import { FaRegStar, FaStar } from "react-icons/fa";
+import { Card, CardBody, HStack, useColorMode } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
+import { Media } from '../interfaces/media';
+import { useFavoritesStore } from '../store';
+import { FaRegStar, FaStar } from 'react-icons/fa';
 
 const MediaCard = ({ media }: { media: Media }) => {
   const { colorMode } = useColorMode();
@@ -12,9 +12,9 @@ const MediaCard = ({ media }: { media: Media }) => {
   return (
     <Card
       role="region"
-      backgroundColor={colorMode === "dark" ? "gray.700" : "gray.100"}
+      backgroundColor={colorMode === 'dark' ? 'gray.700' : 'gray.100'}
     >
-      <HStack justifyContent={"space-between"}>
+      <HStack justifyContent={'space-between'}>
         <Link to={`/${media.id}`} aria-label={media.title}>
           <CardBody>{media.title}</CardBody>
         </Link>

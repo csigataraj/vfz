@@ -1,6 +1,5 @@
-import { create } from "zustand";
-import { MediaQuery } from "./interfaces/media";
-
+import { create } from 'zustand';
+import { MediaQuery } from './interfaces/media';
 
 interface MediaQueryStore {
   query: MediaQuery;
@@ -17,9 +16,12 @@ interface FavoritesStore {
 export const useMediaQueryStore = create<MediaQueryStore>((set) => ({
   query: {},
   search: (searchText: string) => set(() => ({ query: { searchText } })),
-  selectGenre: (genre: string) => set((store) => ({ query: { ...store.query, genre } })),
-  selectType: (type: string) =>  set((store) => ({ query: { ...store.query, type } })),
-  toggleFavorites: (showFavorites: boolean) =>  set((store) => ({ query: { ...store.query, showFavorites } })),
+  selectGenre: (genre: string) =>
+    set((store) => ({ query: { ...store.query, genre } })),
+  selectType: (type: string) =>
+    set((store) => ({ query: { ...store.query, type } })),
+  toggleFavorites: (showFavorites: boolean) =>
+    set((store) => ({ query: { ...store.query, showFavorites } })),
 }));
 
 export const useFavoritesStore = create<FavoritesStore>((set) => ({

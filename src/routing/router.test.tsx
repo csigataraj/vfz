@@ -17,6 +17,16 @@ jest.mock('../pages/ErrorPage', () => ErrorPage);
 jest.mock('../pages/MediaDetailPage', () => MediaDetailPage);
 
 describe('Router Configuration', () => {
+  let mockWarn: jest.SpyInstance;
+
+  beforeEach(() => {
+    mockWarn = jest.spyOn(console, 'warn').mockImplementation(() => {});
+  });
+
+  afterEach(() => {
+    mockWarn.mockRestore();
+  });
+
   it('renders the Layout and HomePage for the root route', () => {
     const memoryRouter = createMemoryRouter(router.routes, {
       initialEntries: ['/'],

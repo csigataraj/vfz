@@ -12,7 +12,7 @@ const getFilteredMedia = (query?: MediaQuery) => {
   if (query?.searchText) {
     result = result.filter((item) => item.title.includes(query.searchText!));
   }
-  if (query?.type && query.type !== "All") {
+  if (query?.type) {
     result = result.filter((item) => item.type === query.type);
   }
 

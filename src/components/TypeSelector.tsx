@@ -2,22 +2,10 @@ import { Button, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 import { BsChevronDown } from "react-icons/bs";
 import { useMediaQueryStore } from "../store";
 import { useState } from "react";
-
-const getType = (type: string) => {
-  switch (type) {
-    case "Books":
-      return "book";
-    case "Movies":
-      return "movie";
-    case "Series":
-      return "series";
-    default:
-      return "All";
-  }
-};
+import { typeDictionary } from "../utils/utils";
 
 const TypeSelector = () => {
-  const types = ["All", "Books", "Movies", "Series"];
+  const typesToRender: string[] = ["All", "Books", "Movies", "Series"];
   const setSelectedType = useMediaQueryStore((s) => s.selectType);
   const [dropdownType, setDropDownType] = useState("All");
 
@@ -27,11 +15,11 @@ const TypeSelector = () => {
         Type: {dropdownType}
       </MenuButton>
       <MenuList>
-        {types.map((type) => (
+        {typesToRender.map((type) => (
           <MenuItem
             onClick={() => {
               setDropDownType(type);
-              setSelectedType(getType(type));
+              setSelectedType(typeDictionary[type]);
             }}
             key={type}
           >

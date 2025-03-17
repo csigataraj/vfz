@@ -52,4 +52,3 @@ npm run test:e2e
 # To run e2e tests (running the app in docker container)
 npx playwright http:/localhost:3000
 ```
-

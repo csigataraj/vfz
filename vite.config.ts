@@ -4,4 +4,19 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          chakra: [
+            '@chakra-ui/react',
+            '@emotion/react',
+            '@emotion/styled',
+            'framer-motion',
+          ],
+        },
+      },
+    },
+  },
 });

@@ -8,7 +8,7 @@ const NavBar = () => {
     <HStack padding="10px" marginBottom={4}>
       <Link to="/">
         <Image
-          src="./assets/star.svg"
+          src="/star.svg"
           alt="Star icon"
           boxSize={{ base: '20px', md: '40px' }}
           objectFit={'cover'}

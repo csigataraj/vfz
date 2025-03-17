@@ -27,3 +27,15 @@ npm run dev
 ```
 
 This will start the back-end process at `http://localhost:5173`
+
+### Alternative running
+
+```bash
+#Run build
+npm run build
+
+# Use Docker Compose:
+docker-compose up
+```
+
+This will start the application in a docker container and you can use it at 'http://localhost:5173'

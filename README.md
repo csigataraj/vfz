@@ -46,7 +46,10 @@ This will start the application in a docker container and you can use it at 'htt
 #To run unit tests
 npm run test
 
-# To run e2e tests
-npx playwright http:/localhost:5173    //or 3000 if you are using docker
+# To run e2e tests (running the app in dev)
+npm run test:e2e
+
+# To run e2e tests (running the app in docker container)
+npx playwright http:/localhost:3000
 ```
 

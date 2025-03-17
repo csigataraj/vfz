@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 .vercel
+
+playwright-e2e-tests/test-results/

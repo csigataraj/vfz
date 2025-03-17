@@ -25,6 +25,7 @@ const MediaCard = ({ media }: { media: Media }) => {
             size={25}
             onClick={() => toggleFavorite(media.id)}
             style={{ marginRight: 8 }}
+            aria-label="star-filled"
           />
         ) : (
           <FaRegStar
@@ -32,6 +33,7 @@ const MediaCard = ({ media }: { media: Media }) => {
             onClick={() => toggleFavorite(media.id)}
             style={{ marginRight: 8 }}
             size={25}
+            aria-label="star-empty"
           />
         )}
       </HStack>

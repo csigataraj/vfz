@@ -30,7 +30,7 @@ const useMedia = (): {
     queryKey: ['media', query],
     queryFn: async () => {
       return new Promise((resolve) => {
-        setTimeout(() => resolve(getFilteredMedia(query)), 1000);
+        setTimeout(() => resolve(getFilteredMedia(query)), 500);
       });
     }, //placeholder for backend call
   });

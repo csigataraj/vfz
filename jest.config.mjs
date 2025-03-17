@@ -2,9 +2,13 @@ export default {
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
   transform: {
-    '^.+\\.tsx?$': 'ts-jest', // Transpile TypeScript files
-    '^.+\\.jsx?$': 'babel-jest', // Transpile JavaScript or JSX files
+    '^.+\\.tsx?$': 'ts-jest',
+    '^.+\\.jsx?$': 'babel-jest',
   },
+  testMatch: [
+    '**/*.test.ts', // Only include .test.ts(x) files, spec files are reserved for playwright e2e tests
+    '**/*.test.tsx',
+  ],
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
   setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
 };

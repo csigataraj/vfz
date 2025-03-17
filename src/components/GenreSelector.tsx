@@ -13,6 +13,7 @@ const GenreSelector = () => {
       <MenuButton
         as={Button}
         rightIcon={<BsChevronDown />}
+        className="genre-selector"
         marginLeft={{ base: 0, sm: 2 }}
         marginTop={{ base: 2, sm: 0 }}
       >

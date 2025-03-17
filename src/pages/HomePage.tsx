@@ -5,6 +5,7 @@ import TypeSelector from '../components/TypeSelector';
 import GenreSelector from '../components/GenreSelector';
 import FavoritesSwitch from '../components/FavoritesSwitch';
 import YearSelector from '../components/YearSelector';
+import '../global.css';
 
 const HomePage = () => {
   return (

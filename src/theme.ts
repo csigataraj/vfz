@@ -1,6 +1,17 @@
-import { ColorModeContextType, extendTheme } from '@chakra-ui/react';
+import {
+  ColorModeContextType,
+  extendTheme,
+  theme as defaultTheme,
+} from '@chakra-ui/react';
 
-// Define your light and dark colors
+const breakpoints = {
+  xs: '375px',
+  sm: '425px',
+  md: '800px',
+  lg: '1000px',
+  xl: '1400px',
+};
+
 const lightTheme = {
   colors: {
     gray: {
@@ -15,13 +26,6 @@ const lightTheme = {
       800: '#303030',
       900: '#202020',
     },
-  },
-  breakpoints: {
-    sm: '400px',
-    md: '800px',
-    lg: '1000px',
-    xl: '1400px',
-    '2xl': '1800px',
   },
 };
 
@@ -40,20 +44,12 @@ const darkTheme = {
       900: '#111',
     },
   },
-  breakpoints: {
-    sm: '400px',
-    md: '800px',
-    lg: '1000px',
-    xl: '1400px',
-    '2xl': '1800px',
-  },
 };
 
-// Extend the theme by combining both themes
 const theme = extendTheme({
   config: {
-    initialColorMode: 'dark', // Set the initial color mode, can be "light" or "dark"
-    useSystemColorMode: false, // Set to true to use system preference
+    initialColorMode: 'dark',
+    useSystemColorMode: false,
   },
   styles: {
     global: (props: ColorModeContextType) => ({
@@ -62,6 +58,10 @@ const theme = extendTheme({
         color: props.colorMode === 'dark' ? 'white' : 'black',
       },
     }),
+  },
+  breakpoints: {
+    ...defaultTheme.breakpoints,
+    ...breakpoints,
   },
   ...lightTheme,
   ...darkTheme,

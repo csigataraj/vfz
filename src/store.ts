@@ -6,6 +6,7 @@ interface MediaQueryStore {
   search: (text: string) => void;
   selectType: (name: string) => void;
   selectGenre: (name: string) => void;
+  selectYear: (year: string) => void;
   toggleFavorites: (show: boolean) => void;
 }
 interface FavoritesStore {
@@ -20,6 +21,8 @@ export const useMediaQueryStore = create<MediaQueryStore>((set) => ({
     set((store) => ({ query: { ...store.query, genre } })),
   selectType: (type: string) =>
     set((store) => ({ query: { ...store.query, type } })),
+  selectYear: (year: string) =>
+    set((store) => ({ query: { ...store.query, year } })),
   toggleFavorites: (showFavorites: boolean) =>
     set((store) => ({ query: { ...store.query, showFavorites } })),
 }));

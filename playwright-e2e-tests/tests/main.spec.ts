@@ -8,12 +8,12 @@ test('Test using the search bar, checking the details of an item and favorite th
   await expect(page.locator('h1')).toHaveText('Media list');
 
   const searchBox = page.getByRole('textbox', { name: 'Search media' });
-  await page.getByRole('textbox', { name: 'Search media' }).click();
+  await searchBox.click();
   await expect(searchBox).toBeFocused();
 
-  await page.getByRole('textbox', { name: 'Search media' }).fill('Action');
+  await searchBox.fill('Action');
   await expect(searchBox).toHaveValue('Action');
-  await page.getByRole('textbox', { name: 'Search media' }).press('Enter');
+  await searchBox.press('Enter');
 
   await page.getByRole('link', { name: 'Action movie 5' }).click();
   await expect(page).toHaveURL('/5');

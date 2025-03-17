@@ -1,6 +1,7 @@
 export interface Media {
   id: string;
   genre: string;
+  year: string;
   type: 'movie' | 'series' | 'book';
   title: string;
   description: string;
@@ -10,6 +11,7 @@ export interface Media {
 export interface MediaQuery {
   genre?: string;
   type?: string;
+  year?: string;
   searchText?: string;
   showFavorites?: boolean;
 }

@@ -4,6 +4,7 @@ import MediaGrid from '../components/MediaGrid';
 import TypeSelector from '../components/TypeSelector';
 import GenreSelector from '../components/GenreSelector';
 import FavoritesSwitch from '../components/FavoritesSwitch';
+import YearSelector from '../components/YearSelector';
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
             <Box>
               <TypeSelector />
               <GenreSelector />
+              <YearSelector />
             </Box>
             <FavoritesSwitch />
           </HStack>

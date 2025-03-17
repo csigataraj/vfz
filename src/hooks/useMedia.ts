@@ -3,6 +3,7 @@ import { media } from '../data/media';
 import { useMediaQueryStore } from '../store';
 import { Media, MediaQuery } from '../interfaces/media';
 
+//placeholder function to simulate a backend query
 const getFilteredMedia = (query?: MediaQuery) => {
   let result = media;
 
@@ -14,6 +15,9 @@ const getFilteredMedia = (query?: MediaQuery) => {
   }
   if (query?.type) {
     result = result.filter((item) => item.type === query.type);
+  }
+  if (query?.year) {
+    result = result.filter((item) => item.year === query.year);
   }
 
   return result;

@@ -9,6 +9,7 @@ export const media: Media[] = [
     id: '1',
     title: 'Action movie 1',
     type: 'movie',
+    year: '1990',
   },
   {
     description:
@@ -18,6 +19,7 @@ export const media: Media[] = [
     id: '2',
     title: 'Action movie 2',
     type: 'movie',
+    year: '2010',
   },
   {
     description:
@@ -27,6 +29,7 @@ export const media: Media[] = [
     id: '3',
     title: 'Action movie 3',
     type: 'movie',
+    year: '1983',
   },
   {
     description:
@@ -36,6 +39,7 @@ export const media: Media[] = [
     id: '4',
     title: 'Action movie 4',
     type: 'movie',
+    year: '1962',
   },
   {
     description:
@@ -45,6 +49,7 @@ export const media: Media[] = [
     id: '5',
     title: 'Action movie 5',
     type: 'movie',
+    year: '2024',
   },
   {
     description:
@@ -54,6 +59,7 @@ export const media: Media[] = [
     id: '6',
     title: 'Action series 1',
     type: 'series',
+    year: '1995',
   },
   {
     description:
@@ -63,6 +69,7 @@ export const media: Media[] = [
     id: '7',
     title: 'Action series 2',
     type: 'series',
+    year: '1968',
   },
   {
     description:
@@ -72,6 +79,7 @@ export const media: Media[] = [
     id: '8',
     title: 'Action series 3',
     type: 'series',
+    year: '1957',
   },
   {
     description:
@@ -81,6 +89,7 @@ export const media: Media[] = [
     id: '9',
     title: 'Action series 4',
     type: 'series',
+    year: '2006',
   },
   {
     description:
@@ -90,6 +99,7 @@ export const media: Media[] = [
     id: '10',
     title: 'Action series 5',
     type: 'series',
+    year: '1976',
   },
   {
     description:
@@ -99,6 +109,7 @@ export const media: Media[] = [
     id: '11',
     title: 'Action book 1',
     type: 'book',
+    year: '1994',
   },
   {
     description:
@@ -108,6 +119,7 @@ export const media: Media[] = [
     id: '12',
     title: 'Action book 2',
     type: 'book',
+    year: '2006',
   },
   {
     description:
@@ -117,6 +129,7 @@ export const media: Media[] = [
     id: '13',
     title: 'Action book 3',
     type: 'book',
+    year: '2014',
   },
   {
     description:
@@ -126,6 +139,7 @@ export const media: Media[] = [
     id: '14',
     title: 'Action book 4',
     type: 'book',
+    year: '1992',
   },
   {
     description:
@@ -135,6 +149,7 @@ export const media: Media[] = [
     id: '15',
     title: 'Action book 5',
     type: 'book',
+    year: '1960',
   },
   {
     description:
@@ -144,6 +159,7 @@ export const media: Media[] = [
     id: '16',
     title: 'Adventure movie 1',
     type: 'movie',
+    year: '1961',
   },
   {
     description:
@@ -153,6 +169,7 @@ export const media: Media[] = [
     id: '17',
     title: 'Adventure movie 2',
     type: 'movie',
+    year: '1975',
   },
   {
     description:
@@ -162,6 +179,7 @@ export const media: Media[] = [
     id: '18',
     title: 'Adventure movie 3',
     type: 'movie',
+    year: '1982',
   },
   {
     description:
@@ -171,6 +189,7 @@ export const media: Media[] = [
     id: '19',
     title: 'Adventure movie 4',
     type: 'movie',
+    year: '1984',
   },
   {
     description:
@@ -180,6 +199,7 @@ export const media: Media[] = [
     id: '20',
     title: 'Adventure movie 5',
     type: 'movie',
+    year: '2016',
   },
   {
     description:
@@ -189,6 +209,7 @@ export const media: Media[] = [
     id: '21',
     title: 'Adventure series 1',
     type: 'series',
+    year: '2001',
   },
   {
     description:
@@ -198,6 +219,7 @@ export const media: Media[] = [
     id: '22',
     title: 'Adventure series 2',
     type: 'series',
+    year: '2014',
   },
   {
     description:
@@ -207,6 +229,7 @@ export const media: Media[] = [
     id: '23',
     title: 'Adventure series 3',
     type: 'series',
+    year: '1997',
   },
   {
     description:
@@ -216,6 +239,7 @@ export const media: Media[] = [
     id: '24',
     title: 'Adventure series 4',
     type: 'series',
+    year: '1979',
   },
   {
     description:
@@ -225,6 +249,7 @@ export const media: Media[] = [
     id: '25',
     title: 'Adventure series 5',
     type: 'series',
+    year: '2025',
   },
   {
     description:
@@ -234,6 +259,7 @@ export const media: Media[] = [
     id: '26',
     title: 'Adventure book 1',
     type: 'book',
+    year: '1950',
   },
   {
     description:
@@ -243,6 +269,7 @@ export const media: Media[] = [
     id: '27',
     title: 'Adventure book 2',
     type: 'book',
+    year: '1999',
   },
   {
     description:
@@ -252,6 +279,7 @@ export const media: Media[] = [
     id: '28',
     title: 'Adventure book 3',
     type: 'book',
+    year: '2017',
   },
   {
     description:
@@ -261,6 +289,7 @@ export const media: Media[] = [
     id: '29',
     title: 'Adventure book 4',
     type: 'book',
+    year: '1950',
   },
   {
     description:
@@ -270,6 +299,7 @@ export const media: Media[] = [
     id: '30',
     title: 'Adventure book 5',
     type: 'book',
+    year: '2011',
   },
   {
     description:
@@ -279,6 +309,7 @@ export const media: Media[] = [
     id: '31',
     title: 'Animation movie 1',
     type: 'movie',
+    year: '1974',
   },
   {
     description:
@@ -288,6 +319,7 @@ export const media: Media[] = [
     id: '32',
     title: 'Animation movie 2',
     type: 'movie',
+    year: '1987',
   },
   {
     description:
@@ -297,6 +329,7 @@ export const media: Media[] = [
     id: '33',
     title: 'Animation movie 3',
     type: 'movie',
+    year: '1992',
   },
   {
     description:
@@ -306,6 +339,7 @@ export const media: Media[] = [
     id: '34',
     title: 'Animation movie 4',
     type: 'movie',
+    year: '1963',
   },
   {
     description:
@@ -315,6 +349,7 @@ export const media: Media[] = [
     id: '35',
     title: 'Animation movie 5',
     type: 'movie',
+    year: '1995',
   },
   {
     description:
@@ -324,6 +359,7 @@ export const media: Media[] = [
     id: '36',
     title: 'Animation series 1',
     type: 'series',
+    year: '1955',
   },
   {
     description:
@@ -333,6 +369,7 @@ export const media: Media[] = [
     id: '37',
     title: 'Animation series 2',
     type: 'series',
+    year: '1953',
   },
   {
     description:
@@ -342,6 +379,7 @@ export const media: Media[] = [
     id: '38',
     title: 'Animation series 3',
     type: 'series',
+    year: '1967',
   },
   {
     description:
@@ -351,6 +389,7 @@ export const media: Media[] = [
     id: '39',
     title: 'Animation series 4',
     type: 'series',
+    year: '1964',
   },
   {
     description:
@@ -360,6 +399,7 @@ export const media: Media[] = [
     id: '40',
     title: 'Animation series 5',
     type: 'series',
+    year: '1993',
   },
   {
     description:
@@ -369,6 +409,7 @@ export const media: Media[] = [
     id: '41',
     title: 'Animation book 1',
     type: 'book',
+    year: '1954',
   },
   {
     description:
@@ -378,6 +419,7 @@ export const media: Media[] = [
     id: '42',
     title: 'Animation book 2',
     type: 'book',
+    year: '1994',
   },
   {
     description:
@@ -387,6 +429,7 @@ export const media: Media[] = [
     id: '43',
     title: 'Animation book 3',
     type: 'book',
+    year: '1981',
   },
   {
     description:
@@ -396,6 +439,7 @@ export const media: Media[] = [
     id: '44',
     title: 'Animation book 4',
     type: 'book',
+    year: '1963',
   },
   {
     description:
@@ -405,6 +449,7 @@ export const media: Media[] = [
     id: '45',
     title: 'Animation book 5',
     type: 'book',
+    year: '1985',
   },
   {
     description:
@@ -414,6 +459,7 @@ export const media: Media[] = [
     id: '46',
     title: 'Biography movie 1',
     type: 'movie',
+    year: '2009',
   },
   {
     description:
@@ -423,6 +469,7 @@ export const media: Media[] = [
     id: '47',
     title: 'Biography movie 2',
     type: 'movie',
+    year: '1987',
   },
   {
     description:
@@ -432,6 +479,7 @@ export const media: Media[] = [
     id: '48',
     title: 'Biography movie 3',
     type: 'movie',
+    year: '2003',
   },
   {
     description:
@@ -441,6 +489,7 @@ export const media: Media[] = [
     id: '49',
     title: 'Biography movie 4',
     type: 'movie',
+    year: '2022',
   },
   {
     description:
@@ -450,6 +499,7 @@ export const media: Media[] = [
     id: '50',
     title: 'Biography movie 5',
     type: 'movie',
+    year: '1967',
   },
   {
     description:
@@ -459,6 +509,7 @@ export const media: Media[] = [
     id: '51',
     title: 'Biography series 1',
     type: 'series',
+    year: '1979',
   },
   {
     description:
@@ -468,6 +519,7 @@ export const media: Media[] = [
     id: '52',
     title: 'Biography series 2',
     type: 'series',
+    year: '1992',
   },
   {
     description:
@@ -477,6 +529,7 @@ export const media: Media[] = [
     id: '53',
     title: 'Biography series 3',
     type: 'series',
+    year: '2012',
   },
   {
     description:
@@ -486,6 +539,7 @@ export const media: Media[] = [
     id: '54',
     title: 'Biography series 4',
     type: 'series',
+    year: '1976',
   },
   {
     description:
@@ -495,6 +549,7 @@ export const media: Media[] = [
     id: '55',
     title: 'Biography series 5',
     type: 'series',
+    year: '1993',
   },
   {
     description:
@@ -504,6 +559,7 @@ export const media: Media[] = [
     id: '56',
     title: 'Biography book 1',
     type: 'book',
+    year: '1984',
   },
   {
     description:
@@ -513,6 +569,7 @@ export const media: Media[] = [
     id: '57',
     title: 'Biography book 2',
     type: 'book',
+    year: '2002',
   },
   {
     description:
@@ -522,6 +579,7 @@ export const media: Media[] = [
     id: '58',
     title: 'Biography book 3',
     type: 'book',
+    year: '1983',
   },
   {
     description:
@@ -531,6 +589,7 @@ export const media: Media[] = [
     id: '59',
     title: 'Biography book 4',
     type: 'book',
+    year: '1985',
   },
   {
     description:
@@ -540,6 +599,7 @@ export const media: Media[] = [
     id: '60',
     title: 'Biography book 5',
     type: 'book',
+    year: '1987',
   },
   {
     description:
@@ -549,6 +609,7 @@ export const media: Media[] = [
     id: '61',
     title: 'Comedy movie 1',
     type: 'movie',
+    year: '1956',
   },
   {
     description:
@@ -558,6 +619,7 @@ export const media: Media[] = [
     id: '62',
     title: 'Comedy movie 2',
     type: 'movie',
+    year: '1979',
   },
   {
     description:
@@ -567,6 +629,7 @@ export const media: Media[] = [
     id: '63',
     title: 'Comedy movie 3',
     type: 'movie',
+    year: '1974',
   },
   {
     description:
@@ -576,6 +639,7 @@ export const media: Media[] = [
     id: '64',
     title: 'Comedy movie 4',
     type: 'movie',
+    year: '2020',
   },
   {
     description:
@@ -585,6 +649,7 @@ export const media: Media[] = [
     id: '65',
     title: 'Comedy movie 5',
     type: 'movie',
+    year: '1952',
   },
   {
     description:
@@ -594,6 +659,7 @@ export const media: Media[] = [
     id: '66',
     title: 'Comedy series 1',
     type: 'series',
+    year: '2022',
   },
   {
     description:
@@ -603,6 +669,7 @@ export const media: Media[] = [
     id: '67',
     title: 'Comedy series 2',
     type: 'series',
+    year: '1960',
   },
   {
     description:
@@ -612,6 +679,7 @@ export const media: Media[] = [
     id: '68',
     title: 'Comedy series 3',
     type: 'series',
+    year: '1963',
   },
   {
     description:
@@ -621,6 +689,7 @@ export const media: Media[] = [
     id: '69',
     title: 'Comedy series 4',
     type: 'series',
+    year: '1997',
   },
   {
     description:
@@ -630,6 +699,7 @@ export const media: Media[] = [
     id: '70',
     title: 'Comedy series 5',
     type: 'series',
+    year: '1967',
   },
   {
     description:
@@ -639,6 +709,7 @@ export const media: Media[] = [
     id: '71',
     title: 'Comedy book 1',
     type: 'book',
+    year: '1985',
   },
   {
     description:
@@ -648,6 +719,7 @@ export const media: Media[] = [
     id: '72',
     title: 'Comedy book 2',
     type: 'book',
+    year: '2004',
   },
   {
     description:
@@ -657,6 +729,7 @@ export const media: Media[] = [
     id: '73',
     title: 'Comedy book 3',
     type: 'book',
+    year: '1996',
   },
   {
     description:
@@ -666,6 +739,7 @@ export const media: Media[] = [
     id: '74',
     title: 'Comedy book 4',
     type: 'book',
+    year: '1991',
   },
   {
     description:
@@ -675,6 +749,7 @@ export const media: Media[] = [
     id: '75',
     title: 'Comedy book 5',
     type: 'book',
+    year: '1983',
   },
   {
     description:
@@ -684,6 +759,7 @@ export const media: Media[] = [
     id: '76',
     title: 'Crime movie 1',
     type: 'movie',
+    year: '1989',
   },
   {
     description:
@@ -693,6 +769,7 @@ export const media: Media[] = [
     id: '77',
     title: 'Crime movie 2',
     type: 'movie',
+    year: '2020',
   },
   {
     description:
@@ -702,6 +779,7 @@ export const media: Media[] = [
     id: '78',
     title: 'Crime movie 3',
     type: 'movie',
+    year: '2001',
   },
   {
     description:
@@ -711,6 +789,7 @@ export const media: Media[] = [
     id: '79',
     title: 'Crime movie 4',
     type: 'movie',
+    year: '1965',
   },
   {
     description:
@@ -720,6 +799,7 @@ export const media: Media[] = [
     id: '80',
     title: 'Crime movie 5',
     type: 'movie',
+    year: '1952',
   },
   {
     description:
@@ -729,6 +809,7 @@ export const media: Media[] = [
     id: '81',
     title: 'Crime series 1',
     type: 'series',
+    year: '1996',
   },
   {
     description:
@@ -738,6 +819,7 @@ export const media: Media[] = [
     id: '82',
     title: 'Crime series 2',
     type: 'series',
+    year: '2008',
   },
   {
     description:
@@ -747,6 +829,7 @@ export const media: Media[] = [
     id: '83',
     title: 'Crime series 3',
     type: 'series',
+    year: '1958',
   },
   {
     description:
@@ -756,6 +839,7 @@ export const media: Media[] = [
     id: '84',
     title: 'Crime series 4',
     type: 'series',
+    year: '1959',
   },
   {
     description:
@@ -765,6 +849,7 @@ export const media: Media[] = [
     id: '85',
     title: 'Crime series 5',
     type: 'series',
+    year: '1986',
   },
   {
     description:
@@ -774,6 +859,7 @@ export const media: Media[] = [
     id: '86',
     title: 'Crime book 1',
     type: 'book',
+    year: '2007',
   },
   {
     description:
@@ -783,6 +869,7 @@ export const media: Media[] = [
     id: '87',
     title: 'Crime book 2',
     type: 'book',
+    year: '1985',
   },
   {
     description:
@@ -792,6 +879,7 @@ export const media: Media[] = [
     id: '88',
     title: 'Crime book 3',
     type: 'book',
+    year: '1992',
   },
   {
     description:
@@ -801,6 +889,7 @@ export const media: Media[] = [
     id: '89',
     title: 'Crime book 4',
     type: 'book',
+    year: '2008',
   },
   {
     description:
@@ -810,6 +899,7 @@ export const media: Media[] = [
     id: '90',
     title: 'Crime book 5',
     type: 'book',
+    year: '1979',
   },
   {
     description:
@@ -819,6 +909,7 @@ export const media: Media[] = [
     id: '91',
     title: 'Documentary movie 1',
     type: 'movie',
+    year: '1955',
   },
   {
     description:
@@ -828,6 +919,7 @@ export const media: Media[] = [
     id: '92',
     title: 'Documentary movie 2',
     type: 'movie',
+    year: '1956',
   },
   {
     description:
@@ -837,6 +929,7 @@ export const media: Media[] = [
     id: '93',
     title: 'Documentary movie 3',
     type: 'movie',
+    year: '2006',
   },
   {
     description:
@@ -846,6 +939,7 @@ export const media: Media[] = [
     id: '94',
     title: 'Documentary movie 4',
     type: 'movie',
+    year: '1981',
   },
   {
     description:
@@ -855,6 +949,7 @@ export const media: Media[] = [
     id: '95',
     title: 'Documentary movie 5',
     type: 'movie',
+    year: '1956',
   },
   {
     description:
@@ -864,6 +959,7 @@ export const media: Media[] = [
     id: '96',
     title: 'Documentary series 1',
     type: 'series',
+    year: '2004',
   },
   {
     description:
@@ -873,6 +969,7 @@ export const media: Media[] = [
     id: '97',
     title: 'Documentary series 2',
     type: 'series',
+    year: '1991',
   },
   {
     description:
@@ -882,6 +979,7 @@ export const media: Media[] = [
     id: '98',
     title: 'Documentary series 3',
     type: 'series',
+    year: '2005',
   },
   {
     description:
@@ -891,6 +989,7 @@ export const media: Media[] = [
     id: '99',
     title: 'Documentary series 4',
     type: 'series',
+    year: '1958',
   },
   {
     description:
@@ -900,6 +999,7 @@ export const media: Media[] = [
     id: '100',
     title: 'Documentary series 5',
     type: 'series',
+    year: '1984',
   },
   {
     description:
@@ -909,6 +1009,7 @@ export const media: Media[] = [
     id: '101',
     title: 'Documentary book 1',
     type: 'book',
+    year: '2024',
   },
   {
     description:
@@ -918,6 +1019,7 @@ export const media: Media[] = [
     id: '102',
     title: 'Documentary book 2',
     type: 'book',
+    year: '2017',
   },
   {
     description:
@@ -927,6 +1029,7 @@ export const media: Media[] = [
     id: '103',
     title: 'Documentary book 3',
     type: 'book',
+    year: '2017',
   },
   {
     description:
@@ -936,6 +1039,7 @@ export const media: Media[] = [
     id: '104',
     title: 'Documentary book 4',
     type: 'book',
+    year: '1951',
   },
   {
     description:
@@ -945,6 +1049,7 @@ export const media: Media[] = [
     id: '105',
     title: 'Documentary book 5',
     type: 'book',
+    year: '1953',
   },
   {
     description:
@@ -954,6 +1059,7 @@ export const media: Media[] = [
     id: '106',
     title: 'Drama movie 1',
     type: 'movie',
+    year: '1985',
   },
   {
     description:
@@ -963,6 +1069,7 @@ export const media: Media[] = [
     id: '107',
     title: 'Drama movie 2',
     type: 'movie',
+    year: '1987',
   },
   {
     description:
@@ -972,6 +1079,7 @@ export const media: Media[] = [
     id: '108',
     title: 'Drama movie 3',
     type: 'movie',
+    year: '1953',
   },
   {
     description:
@@ -981,6 +1089,7 @@ export const media: Media[] = [
     id: '109',
     title: 'Drama movie 4',
     type: 'movie',
+    year: '2000',
   },
   {
     description:
@@ -990,6 +1099,7 @@ export const media: Media[] = [
     id: '110',
     title: 'Drama movie 5',
     type: 'movie',
+    year: '2003',
   },
   {
     description:
@@ -999,6 +1109,7 @@ export const media: Media[] = [
     id: '111',
     title: 'Drama series 1',
     type: 'series',
+    year: '2000',
   },
   {
     description:
@@ -1008,6 +1119,7 @@ export const media: Media[] = [
     id: '112',
     title: 'Drama series 2',
     type: 'series',
+    year: '1992',
   },
   {
     description:
@@ -1017,6 +1129,7 @@ export const media: Media[] = [
     id: '113',
     title: 'Drama series 3',
     type: 'series',
+    year: '1964',
   },
   {
     description:
@@ -1026,6 +1139,7 @@ export const media: Media[] = [
     id: '114',
     title: 'Drama series 4',
     type: 'series',
+    year: '2015',
   },
   {
     description:
@@ -1035,6 +1149,7 @@ export const media: Media[] = [
     id: '115',
     title: 'Drama series 5',
     type: 'series',
+    year: '2013',
   },
   {
     description:
@@ -1044,6 +1159,7 @@ export const media: Media[] = [
     id: '116',
     title: 'Drama book 1',
     type: 'book',
+    year: '2015',
   },
   {
     description:
@@ -1053,6 +1169,7 @@ export const media: Media[] = [
     id: '117',
     title: 'Drama book 2',
     type: 'book',
+    year: '2012',
   },
   {
     description:
@@ -1062,6 +1179,7 @@ export const media: Media[] = [
     id: '118',
     title: 'Drama book 3',
     type: 'book',
+    year: '1975',
   },
   {
     description:
@@ -1071,6 +1189,7 @@ export const media: Media[] = [
     id: '119',
     title: 'Drama book 4',
     type: 'book',
+    year: '1996',
   },
   {
     description:
@@ -1080,6 +1199,7 @@ export const media: Media[] = [
     id: '120',
     title: 'Drama book 5',
     type: 'book',
+    year: '1989',
   },
   {
     description:
@@ -1089,6 +1209,7 @@ export const media: Media[] = [
     id: '121',
     title: 'Family movie 1',
     type: 'movie',
+    year: '2002',
   },
   {
     description:
@@ -1098,6 +1219,7 @@ export const media: Media[] = [
     id: '122',
     title: 'Family movie 2',
     type: 'movie',
+    year: '1980',
   },
   {
     description:
@@ -1107,6 +1229,7 @@ export const media: Media[] = [
     id: '123',
     title: 'Family movie 3',
     type: 'movie',
+    year: '2005',
   },
   {
     description:
@@ -1116,6 +1239,7 @@ export const media: Media[] = [
     id: '124',
     title: 'Family movie 4',
     type: 'movie',
+    year: '2005',
   },
   {
     description:
@@ -1125,6 +1249,7 @@ export const media: Media[] = [
     id: '125',
     title: 'Family movie 5',
     type: 'movie',
+    year: '2001',
   },
   {
     description:
@@ -1134,6 +1259,7 @@ export const media: Media[] = [
     id: '126',
     title: 'Family series 1',
     type: 'series',
+    year: '1977',
   },
   {
     description:
@@ -1143,6 +1269,7 @@ export const media: Media[] = [
     id: '127',
     title: 'Family series 2',
     type: 'series',
+    year: '1956',
   },
   {
     description:
@@ -1152,6 +1279,7 @@ export const media: Media[] = [
     id: '128',
     title: 'Family series 3',
     type: 'series',
+    year: '1983',
   },
   {
     description:
@@ -1161,6 +1289,7 @@ export const media: Media[] = [
     id: '129',
     title: 'Family series 4',
     type: 'series',
+    year: '1995',
   },
   {
     description:
@@ -1170,6 +1299,7 @@ export const media: Media[] = [
     id: '130',
     title: 'Family series 5',
     type: 'series',
+    year: '2017',
   },
   {
     description:
@@ -1179,6 +1309,7 @@ export const media: Media[] = [
     id: '131',
     title: 'Family book 1',
     type: 'book',
+    year: '2020',
   },
   {
     description:
@@ -1188,6 +1319,7 @@ export const media: Media[] = [
     id: '132',
     title: 'Family book 2',
     type: 'book',
+    year: '2004',
   },
   {
     description:
@@ -1197,6 +1329,7 @@ export const media: Media[] = [
     id: '133',
     title: 'Family book 3',
     type: 'book',
+    year: '1967',
   },
   {
     description:
@@ -1206,6 +1339,7 @@ export const media: Media[] = [
     id: '134',
     title: 'Family book 4',
     type: 'book',
+    year: '1958',
   },
   {
     description:
@@ -1215,6 +1349,7 @@ export const media: Media[] = [
     id: '135',
     title: 'Family book 5',
     type: 'book',
+    year: '1954',
   },
   {
     description:
@@ -1224,6 +1359,7 @@ export const media: Media[] = [
     id: '136',
     title: 'Fantasy movie 1',
     type: 'movie',
+    year: '2000',
   },
   {
     description:
@@ -1233,6 +1369,7 @@ export const media: Media[] = [
     id: '137',
     title: 'Fantasy movie 2',
     type: 'movie',
+    year: '2007',
   },
   {
     description:
@@ -1242,6 +1379,7 @@ export const media: Media[] = [
     id: '138',
     title: 'Fantasy movie 3',
     type: 'movie',
+    year: '1959',
   },
   {
     description:
@@ -1251,6 +1389,7 @@ export const media: Media[] = [
     id: '139',
     title: 'Fantasy movie 4',
     type: 'movie',
+    year: '2017',
   },
   {
     description:
@@ -1260,6 +1399,7 @@ export const media: Media[] = [
     id: '140',
     title: 'Fantasy movie 5',
     type: 'movie',
+    year: '2003',
   },
   {
     description:
@@ -1269,6 +1409,7 @@ export const media: Media[] = [
     id: '141',
     title: 'Fantasy series 1',
     type: 'series',
+    year: '1985',
   },
   {
     description:
@@ -1278,6 +1419,7 @@ export const media: Media[] = [
     id: '142',
     title: 'Fantasy series 2',
     type: 'series',
+    year: '2012',
   },
   {
     description:
@@ -1287,6 +1429,7 @@ export const media: Media[] = [
     id: '143',
     title: 'Fantasy series 3',
     type: 'series',
+    year: '2020',
   },
   {
     description:
@@ -1296,6 +1439,7 @@ export const media: Media[] = [
     id: '144',
     title: 'Fantasy series 4',
     type: 'series',
+    year: '1986',
   },
   {
     description:
@@ -1305,6 +1449,7 @@ export const media: Media[] = [
     id: '145',
     title: 'Fantasy series 5',
     type: 'series',
+    year: '1993',
   },
   {
     description:
@@ -1314,6 +1459,7 @@ export const media: Media[] = [
     id: '146',
     title: 'Fantasy book 1',
     type: 'book',
+    year: '1973',
   },
   {
     description:
@@ -1323,6 +1469,7 @@ export const media: Media[] = [
     id: '147',
     title: 'Fantasy book 2',
     type: 'book',
+    year: '1988',
   },
   {
     description:
@@ -1332,6 +1479,7 @@ export const media: Media[] = [
     id: '148',
     title: 'Fantasy book 3',
     type: 'book',
+    year: '1957',
   },
   {
     description:
@@ -1341,6 +1489,7 @@ export const media: Media[] = [
     id: '149',
     title: 'Fantasy book 4',
     type: 'book',
+    year: '1968',
   },
   {
     description:
@@ -1350,6 +1499,7 @@ export const media: Media[] = [
     id: '150',
     title: 'Fantasy book 5',
     type: 'book',
+    year: '1996',
   },
   {
     description:
@@ -1359,6 +1509,7 @@ export const media: Media[] = [
     id: '151',
     title: 'Historical movie 1',
     type: 'movie',
+    year: '1992',
   },
   {
     description:
@@ -1368,6 +1519,7 @@ export const media: Media[] = [
     id: '152',
     title: 'Historical movie 2',
     type: 'movie',
+    year: '2012',
   },
   {
     description:
@@ -1377,6 +1529,7 @@ export const media: Media[] = [
     id: '153',
     title: 'Historical movie 3',
     type: 'movie',
+    year: '1988',
   },
   {
     description:
@@ -1386,6 +1539,7 @@ export const media: Media[] = [
     id: '154',
     title: 'Historical movie 4',
     type: 'movie',
+    year: '2025',
   },
   {
     description:
@@ -1395,6 +1549,7 @@ export const media: Media[] = [
     id: '155',
     title: 'Historical movie 5',
     type: 'movie',
+    year: '1952',
   },
   {
     description:
@@ -1404,6 +1559,7 @@ export const media: Media[] = [
     id: '156',
     title: 'Historical series 1',
     type: 'series',
+    year: '1966',
   },
   {
     description:
@@ -1413,6 +1569,7 @@ export const media: Media[] = [
     id: '157',
     title: 'Historical series 2',
     type: 'series',
+    year: '1992',
   },
   {
     description:
@@ -1422,6 +1579,7 @@ export const media: Media[] = [
     id: '158',
     title: 'Historical series 3',
     type: 'series',
+    year: '1986',
   },
   {
     description:
@@ -1431,6 +1589,7 @@ export const media: Media[] = [
     id: '159',
     title: 'Historical series 4',
     type: 'series',
+    year: '1963',
   },
   {
     description:
@@ -1440,6 +1599,7 @@ export const media: Media[] = [
     id: '160',
     title: 'Historical series 5',
     type: 'series',
+    year: '2009',
   },
   {
     description:
@@ -1449,6 +1609,7 @@ export const media: Media[] = [
     id: '161',
     title: 'Historical book 1',
     type: 'book',
+    year: '1965',
   },
   {
     description:
@@ -1458,6 +1619,7 @@ export const media: Media[] = [
     id: '162',
     title: 'Historical book 2',
     type: 'book',
+    year: '2006',
   },
   {
     description:
@@ -1467,6 +1629,7 @@ export const media: Media[] = [
     id: '163',
     title: 'Historical book 3',
     type: 'book',
+    year: '1980',
   },
   {
     description:
@@ -1476,6 +1639,7 @@ export const media: Media[] = [
     id: '164',
     title: 'Historical book 4',
     type: 'book',
+    year: '2009',
   },
   {
     description:
@@ -1485,6 +1649,7 @@ export const media: Media[] = [
     id: '165',
     title: 'Historical book 5',
     type: 'book',
+    year: '2008',
   },
   {
     description:
@@ -1494,6 +1659,7 @@ export const media: Media[] = [
     id: '166',
     title: 'Horror movie 1',
     type: 'movie',
+    year: '1996',
   },
   {
     description:
@@ -1503,6 +1669,7 @@ export const media: Media[] = [
     id: '167',
     title: 'Horror movie 2',
     type: 'movie',
+    year: '1996',
   },
   {
     description:
@@ -1512,6 +1679,7 @@ export const media: Media[] = [
     id: '168',
     title: 'Horror movie 3',
     type: 'movie',
+    year: '2017',
   },
   {
     description:
@@ -1521,6 +1689,7 @@ export const media: Media[] = [
     id: '169',
     title: 'Horror movie 4',
     type: 'movie',
+    year: '1989',
   },
   {
     description:
@@ -1530,6 +1699,7 @@ export const media: Media[] = [
     id: '170',
     title: 'Horror movie 5',
     type: 'movie',
+    year: '1959',
   },
   {
     description:
@@ -1539,6 +1709,7 @@ export const media: Media[] = [
     id: '171',
     title: 'Horror series 1',
     type: 'series',
+    year: '1950',
   },
   {
     description:
@@ -1548,6 +1719,7 @@ export const media: Media[] = [
     id: '172',
     title: 'Horror series 2',
     type: 'series',
+    year: '1971',
   },
   {
     description:
@@ -1557,6 +1729,7 @@ export const media: Media[] = [
     id: '173',
     title: 'Horror series 3',
     type: 'series',
+    year: '1961',
   },
   {
     description:
@@ -1566,6 +1739,7 @@ export const media: Media[] = [
     id: '174',
     title: 'Horror series 4',
     type: 'series',
+    year: '2022',
   },
   {
     description:
@@ -1575,6 +1749,7 @@ export const media: Media[] = [
     id: '175',
     title: 'Horror series 5',
     type: 'series',
+    year: '1960',
   },
   {
     description:
@@ -1584,6 +1759,7 @@ export const media: Media[] = [
     id: '176',
     title: 'Horror book 1',
     type: 'book',
+    year: '1980',
   },
   {
     description:
@@ -1593,6 +1769,7 @@ export const media: Media[] = [
     id: '177',
     title: 'Horror book 2',
     type: 'book',
+    year: '1960',
   },
   {
     description:
@@ -1602,6 +1779,7 @@ export const media: Media[] = [
     id: '178',
     title: 'Horror book 3',
     type: 'book',
+    year: '2017',
   },
   {
     description:
@@ -1611,6 +1789,7 @@ export const media: Media[] = [
     id: '179',
     title: 'Horror book 4',
     type: 'book',
+    year: '1981',
   },
   {
     description:
@@ -1620,6 +1799,7 @@ export const media: Media[] = [
     id: '180',
     title: 'Horror book 5',
     type: 'book',
+    year: '1968',
   },
   {
     description:
@@ -1629,6 +1809,7 @@ export const media: Media[] = [
     id: '181',
     title: 'Mystery movie 1',
     type: 'movie',
+    year: '1961',
   },
   {
     description:
@@ -1638,6 +1819,7 @@ export const media: Media[] = [
     id: '182',
     title: 'Mystery movie 2',
     type: 'movie',
+    year: '1980',
   },
   {
     description:
@@ -1647,6 +1829,7 @@ export const media: Media[] = [
     id: '183',
     title: 'Mystery movie 3',
     type: 'movie',
+    year: '1991',
   },
   {
     description:
@@ -1656,6 +1839,7 @@ export const media: Media[] = [
     id: '184',
     title: 'Mystery movie 4',
     type: 'movie',
+    year: '2020',
   },
   {
     description:
@@ -1665,6 +1849,7 @@ export const media: Media[] = [
     id: '185',
     title: 'Mystery movie 5',
     type: 'movie',
+    year: '2004',
   },
   {
     description:
@@ -1674,6 +1859,7 @@ export const media: Media[] = [
     id: '186',
     title: 'Mystery series 1',
     type: 'series',
+    year: '2024',
   },
   {
     description:
@@ -1683,6 +1869,7 @@ export const media: Media[] = [
     id: '187',
     title: 'Mystery series 2',
     type: 'series',
+    year: '1988',
   },
   {
     description:
@@ -1692,6 +1879,7 @@ export const media: Media[] = [
     id: '188',
     title: 'Mystery series 3',
     type: 'series',
+    year: '1958',
   },
   {
     description:
@@ -1701,6 +1889,7 @@ export const media: Media[] = [
     id: '189',
     title: 'Mystery series 4',
     type: 'series',
+    year: '2004',
   },
   {
     description:
@@ -1710,6 +1899,7 @@ export const media: Media[] = [
     id: '190',
     title: 'Mystery series 5',
     type: 'series',
+    year: '1993',
   },
   {
     description:
@@ -1719,6 +1909,7 @@ export const media: Media[] = [
     id: '191',
     title: 'Mystery book 1',
     type: 'book',
+    year: '1963',
   },
   {
     description:
@@ -1728,6 +1919,7 @@ export const media: Media[] = [
     id: '192',
     title: 'Mystery book 2',
     type: 'book',
+    year: '1995',
   },
   {
     description:
@@ -1737,6 +1929,7 @@ export const media: Media[] = [
     id: '193',
     title: 'Mystery book 3',
     type: 'book',
+    year: '1969',
   },
   {
     description:
@@ -1746,6 +1939,7 @@ export const media: Media[] = [
     id: '194',
     title: 'Mystery book 4',
     type: 'book',
+    year: '2011',
   },
   {
     description:
@@ -1755,6 +1949,7 @@ export const media: Media[] = [
     id: '195',
     title: 'Mystery book 5',
     type: 'book',
+    year: '2008',
   },
   {
     description:
@@ -1764,6 +1959,7 @@ export const media: Media[] = [
     id: '196',
     title: 'Romance movie 1',
     type: 'movie',
+    year: '1982',
   },
   {
     description:
@@ -1773,6 +1969,7 @@ export const media: Media[] = [
     id: '197',
     title: 'Romance movie 2',
     type: 'movie',
+    year: '1952',
   },
   {
     description:
@@ -1782,6 +1979,7 @@ export const media: Media[] = [
     id: '198',
     title: 'Romance movie 3',
     type: 'movie',
+    year: '2003',
   },
   {
     description:
@@ -1791,6 +1989,7 @@ export const media: Media[] = [
     id: '199',
     title: 'Romance movie 4',
     type: 'movie',
+    year: '2005',
   },
   {
     description:
@@ -1800,6 +1999,7 @@ export const media: Media[] = [
     id: '200',
     title: 'Romance movie 5',
     type: 'movie',
+    year: '1982',
   },
   {
     description:
@@ -1809,6 +2009,7 @@ export const media: Media[] = [
     id: '201',
     title: 'Romance series 1',
     type: 'series',
+    year: '1956',
   },
   {
     description:
@@ -1818,6 +2019,7 @@ export const media: Media[] = [
     id: '202',
     title: 'Romance series 2',
     type: 'series',
+    year: '2001',
   },
   {
     description:
@@ -1827,6 +2029,7 @@ export const media: Media[] = [
     id: '203',
     title: 'Romance series 3',
     type: 'series',
+    year: '1992',
   },
   {
     description:
@@ -1836,6 +2039,7 @@ export const media: Media[] = [
     id: '204',
     title: 'Romance series 4',
     type: 'series',
+    year: '1951',
   },
   {
     description:
@@ -1845,6 +2049,7 @@ export const media: Media[] = [
     id: '205',
     title: 'Romance series 5',
     type: 'series',
+    year: '2015',
   },
   {
     description:
@@ -1854,6 +2059,7 @@ export const media: Media[] = [
     id: '206',
     title: 'Romance book 1',
     type: 'book',
+    year: '1968',
   },
   {
     description:
@@ -1863,6 +2069,7 @@ export const media: Media[] = [
     id: '207',
     title: 'Romance book 2',
     type: 'book',
+    year: '1969',
   },
   {
     description:
@@ -1872,6 +2079,7 @@ export const media: Media[] = [
     id: '208',
     title: 'Romance book 3',
     type: 'book',
+    year: '1987',
   },
   {
     description:
@@ -1881,6 +2089,7 @@ export const media: Media[] = [
     id: '209',
     title: 'Romance book 4',
     type: 'book',
+    year: '2024',
   },
   {
     description:
@@ -1890,6 +2099,7 @@ export const media: Media[] = [
     id: '210',
     title: 'Romance book 5',
     type: 'book',
+    year: '1986',
   },
   {
     description:
@@ -1899,6 +2109,7 @@ export const media: Media[] = [
     id: '211',
     title: 'ScienceFiction movie 1',
     type: 'movie',
+    year: '2001',
   },
   {
     description:
@@ -1908,6 +2119,7 @@ export const media: Media[] = [
     id: '212',
     title: 'ScienceFiction movie 2',
     type: 'movie',
+    year: '2021',
   },
   {
     description:
@@ -1917,6 +2129,7 @@ export const media: Media[] = [
     id: '213',
     title: 'ScienceFiction movie 3',
     type: 'movie',
+    year: '1960',
   },
   {
     description:
@@ -1926,6 +2139,7 @@ export const media: Media[] = [
     id: '214',
     title: 'ScienceFiction movie 4',
     type: 'movie',
+    year: '1981',
   },
   {
     description:
@@ -1935,6 +2149,7 @@ export const media: Media[] = [
     id: '215',
     title: 'ScienceFiction movie 5',
     type: 'movie',
+    year: '2008',
   },
   {
     description:
@@ -1944,6 +2159,7 @@ export const media: Media[] = [
     id: '216',
     title: 'ScienceFiction series 1',
     type: 'series',
+    year: '1966',
   },
   {
     description:
@@ -1953,6 +2169,7 @@ export const media: Media[] = [
     id: '217',
     title: 'ScienceFiction series 2',
     type: 'series',
+    year: '2025',
   },
   {
     description:
@@ -1962,6 +2179,7 @@ export const media: Media[] = [
     id: '218',
     title: 'ScienceFiction series 3',
     type: 'series',
+    year: '2024',
   },
   {
     description:
@@ -1971,6 +2189,7 @@ export const media: Media[] = [
     id: '219',
     title: 'ScienceFiction series 4',
     type: 'series',
+    year: '1998',
   },
   {
     description:
@@ -1980,6 +2199,7 @@ export const media: Media[] = [
     id: '220',
     title: 'ScienceFiction series 5',
     type: 'series',
+    year: '1998',
   },
   {
     description:
@@ -1989,6 +2209,7 @@ export const media: Media[] = [
     id: '221',
     title: 'ScienceFiction book 1',
     type: 'book',
+    year: '1987',
   },
   {
     description:
@@ -1998,6 +2219,7 @@ export const media: Media[] = [
     id: '222',
     title: 'ScienceFiction book 2',
     type: 'book',
+    year: '2017',
   },
   {
     description:
@@ -2007,6 +2229,7 @@ export const media: Media[] = [
     id: '223',
     title: 'ScienceFiction book 3',
     type: 'book',
+    year: '1952',
   },
   {
     description:
@@ -2016,6 +2239,7 @@ export const media: Media[] = [
     id: '224',
     title: 'ScienceFiction book 4',
     type: 'book',
+    year: '1991',
   },
   {
     description:
@@ -2025,6 +2249,7 @@ export const media: Media[] = [
     id: '225',
     title: 'ScienceFiction book 5',
     type: 'book',
+    year: '1959',
   },
   {
     description:
@@ -2034,6 +2259,7 @@ export const media: Media[] = [
     id: '226',
     title: 'Thriller movie 1',
     type: 'movie',
+    year: '1961',
   },
   {
     description:
@@ -2043,6 +2269,7 @@ export const media: Media[] = [
     id: '227',
     title: 'Thriller movie 2',
     type: 'movie',
+    year: '1983',
   },
   {
     description:
@@ -2052,6 +2279,7 @@ export const media: Media[] = [
     id: '228',
     title: 'Thriller movie 3',
     type: 'movie',
+    year: '1960',
   },
   {
     description:
@@ -2061,6 +2289,7 @@ export const media: Media[] = [
     id: '229',
     title: 'Thriller movie 4',
     type: 'movie',
+    year: '1960',
   },
   {
     description:
@@ -2070,6 +2299,7 @@ export const media: Media[] = [
     id: '230',
     title: 'Thriller movie 5',
     type: 'movie',
+    year: '1985',
   },
   {
     description:
@@ -2079,6 +2309,7 @@ export const media: Media[] = [
     id: '231',
     title: 'Thriller series 1',
     type: 'series',
+    year: '1978',
   },
   {
     description:
@@ -2088,6 +2319,7 @@ export const media: Media[] = [
     id: '232',
     title: 'Thriller series 2',
     type: 'series',
+    year: '1971',
   },
   {
     description:
@@ -2097,6 +2329,7 @@ export const media: Media[] = [
     id: '233',
     title: 'Thriller series 3',
     type: 'series',
+    year: '2003',
   },
   {
     description:
@@ -2106,6 +2339,7 @@ export const media: Media[] = [
     id: '234',
     title: 'Thriller series 4',
     type: 'series',
+    year: '1996',
   },
   {
     description:
@@ -2115,6 +2349,7 @@ export const media: Media[] = [
     id: '235',
     title: 'Thriller series 5',
     type: 'series',
+    year: '1978',
   },
   {
     description:
@@ -2124,6 +2359,7 @@ export const media: Media[] = [
     id: '236',
     title: 'Thriller book 1',
     type: 'book',
+    year: '1989',
   },
   {
     description:
@@ -2133,6 +2369,7 @@ export const media: Media[] = [
     id: '237',
     title: 'Thriller book 2',
     type: 'book',
+    year: '1998',
   },
   {
     description:
@@ -2142,6 +2379,7 @@ export const media: Media[] = [
     id: '238',
     title: 'Thriller book 3',
     type: 'book',
+    year: '1964',
   },
   {
     description:
@@ -2151,6 +2389,7 @@ export const media: Media[] = [
     id: '239',
     title: 'Thriller book 4',
     type: 'book',
+    year: '1983',
   },
   {
     description:
@@ -2160,6 +2399,7 @@ export const media: Media[] = [
     id: '240',
     title: 'Thriller book 5',
     type: 'book',
+    year: '1974',
   },
   {
     description:
@@ -2169,6 +2409,7 @@ export const media: Media[] = [
     id: '241',
     title: 'War movie 1',
     type: 'movie',
+    year: '1986',
   },
   {
     description:
@@ -2178,6 +2419,7 @@ export const media: Media[] = [
     id: '242',
     title: 'War movie 2',
     type: 'movie',
+    year: '1989',
   },
   {
     description:
@@ -2187,6 +2429,7 @@ export const media: Media[] = [
     id: '243',
     title: 'War movie 3',
     type: 'movie',
+    year: '1979',
   },
   {
     description:
@@ -2196,6 +2439,7 @@ export const media: Media[] = [
     id: '244',
     title: 'War movie 4',
     type: 'movie',
+    year: '1974',
   },
   {
     description:
@@ -2205,6 +2449,7 @@ export const media: Media[] = [
     id: '245',
     title: 'War movie 5',
     type: 'movie',
+    year: '1955',
   },
   {
     description:
@@ -2214,6 +2459,7 @@ export const media: Media[] = [
     id: '246',
     title: 'War series 1',
     type: 'series',
+    year: '1972',
   },
   {
     description:
@@ -2223,6 +2469,7 @@ export const media: Media[] = [
     id: '247',
     title: 'War series 2',
     type: 'series',
+    year: '1996',
   },
   {
     description:
@@ -2232,6 +2479,7 @@ export const media: Media[] = [
     id: '248',
     title: 'War series 3',
     type: 'series',
+    year: '1997',
   },
   {
     description:
@@ -2241,6 +2489,7 @@ export const media: Media[] = [
     id: '249',
     title: 'War series 4',
     type: 'series',
+    year: '2005',
   },
   {
     description:
@@ -2250,6 +2499,7 @@ export const media: Media[] = [
     id: '250',
     title: 'War series 5',
     type: 'series',
+    year: '1952',
   },
   {
     description:
@@ -2259,6 +2509,7 @@ export const media: Media[] = [
     id: '251',
     title: 'War book 1',
     type: 'book',
+    year: '1989',
   },
   {
     description:
@@ -2268,6 +2519,7 @@ export const media: Media[] = [
     id: '252',
     title: 'War book 2',
     type: 'book',
+    year: '1960',
   },
   {
     description:
@@ -2277,6 +2529,7 @@ export const media: Media[] = [
     id: '253',
     title: 'War book 3',
     type: 'book',
+    year: '2004',
   },
   {
     description:
@@ -2286,6 +2539,7 @@ export const media: Media[] = [
     id: '254',
     title: 'War book 4',
     type: 'book',
+    year: '1994',
   },
   {
     description:
@@ -2295,6 +2549,7 @@ export const media: Media[] = [
     id: '255',
     title: 'War book 5',
     type: 'book',
+    year: '2025',
   },
   {
     description:
@@ -2304,6 +2559,7 @@ export const media: Media[] = [
     id: '256',
     title: 'Western movie 1',
     type: 'movie',
+    year: '1957',
   },
   {
     description:
@@ -2313,6 +2569,7 @@ export const media: Media[] = [
     id: '257',
     title: 'Western movie 2',
     type: 'movie',
+    year: '2023',
   },
   {
     description:
@@ -2322,6 +2579,7 @@ export const media: Media[] = [
     id: '258',
     title: 'Western movie 3',
     type: 'movie',
+    year: '1984',
   },
   {
     description:
@@ -2331,6 +2589,7 @@ export const media: Media[] = [
     id: '259',
     title: 'Western movie 4',
     type: 'movie',
+    year: '1951',
   },
   {
     description:
@@ -2340,6 +2599,7 @@ export const media: Media[] = [
     id: '260',
     title: 'Western movie 5',
     type: 'movie',
+    year: '1996',
   },
   {
     description:
@@ -2349,6 +2609,7 @@ export const media: Media[] = [
     id: '261',
     title: 'Western series 1',
     type: 'series',
+    year: '1976',
   },
   {
     description:
@@ -2358,6 +2619,7 @@ export const media: Media[] = [
     id: '262',
     title: 'Western series 2',
     type: 'series',
+    year: '1976',
   },
   {
     description:
@@ -2367,6 +2629,7 @@ export const media: Media[] = [
     id: '263',
     title: 'Western series 3',
     type: 'series',
+    year: '2014',
   },
   {
     description:
@@ -2376,6 +2639,7 @@ export const media: Media[] = [
     id: '264',
     title: 'Western series 4',
     type: 'series',
+    year: '1974',
   },
   {
     description:
@@ -2385,6 +2649,7 @@ export const media: Media[] = [
     id: '265',
     title: 'Western series 5',
     type: 'series',
+    year: '1973',
   },
   {
     description:
@@ -2394,6 +2659,7 @@ export const media: Media[] = [
     id: '266',
     title: 'Western book 1',
     type: 'book',
+    year: '1971',
   },
   {
     description:
@@ -2403,6 +2669,7 @@ export const media: Media[] = [
     id: '267',
     title: 'Western book 2',
     type: 'book',
+    year: '1994',
   },
   {
     description:
@@ -2412,6 +2679,7 @@ export const media: Media[] = [
     id: '268',
     title: 'Western book 3',
     type: 'book',
+    year: '2003',
   },
   {
     description:
@@ -2421,6 +2689,7 @@ export const media: Media[] = [
     id: '269',
     title: 'Western book 4',
     type: 'book',
+    year: '2004',
   },
   {
     description:
@@ -2430,5 +2699,6 @@ export const media: Media[] = [
     id: '270',
     title: 'Western book 5',
     type: 'book',
+    year: '1990',
   },
 ];

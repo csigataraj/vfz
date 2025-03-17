@@ -19,13 +19,14 @@ describe('MediaDetailPage Component', () => {
     (useParams as jest.Mock).mockReturnValue({ id: '1' });
     (useMediaDetails as jest.Mock).mockReturnValue({
       title: 'Test Media Title',
+      year: '2018',
       description: 'This is a test media description.',
     });
 
     render(<MediaDetailPage />);
 
     expect(
-      screen.getByRole('heading', { name: 'Test Media Title' })
+      screen.getByRole('heading', { name: 'Test Media Title (2018)' })
     ).toBeInTheDocument();
     expect(
       screen.getByText('This is a test media description.')

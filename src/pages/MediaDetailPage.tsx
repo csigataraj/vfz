@@ -10,7 +10,7 @@ const MediaDetailPage = () => {
     <Box>
       <>
         <Heading size="4xl" mb={4}>
-          {details.title}
+          {`${details.title} (${details.year})`}
         </Heading>
         <Text>{details.description}</Text>
       </>

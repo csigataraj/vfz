@@ -14,8 +14,6 @@ const GenreSelector = () => {
         as={Button}
         rightIcon={<BsChevronDown />}
         className="genre-selector"
-        marginLeft={{ base: 0, sm: 2 }}
-        marginTop={{ base: 2, sm: 0 }}
       >
         {`Genre: ${selectedGenre || 'All'}`}
       </MenuButton>

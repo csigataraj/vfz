@@ -39,3 +39,14 @@ docker-compose up
 ```
 
 This will start the application in a docker container and you can use it at 'http://localhost:5173'
+
+## Running the tests
+
+```bash
+#To run unit tests
+npm run test
+
+# To run e2e tests
+npx playwright http:/localhost:5173    //or 3000 if you are using docker
+```
+

@@ -18,7 +18,7 @@ const GenreSelector = () => {
       >
         {`Genre: ${selectedGenre || 'All'}`}
       </MenuButton>
-      <MenuList maxHeight="150px" overflowY="auto">
+      <MenuList maxHeight="300px" overflowY="auto">
         {genres.map((genre) => (
           <MenuItem
             onClick={() => {

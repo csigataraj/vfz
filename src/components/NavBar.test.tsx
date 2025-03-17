@@ -12,7 +12,7 @@ describe('NavBar Component', () => {
 
     const logo = screen.getByAltText('Star icon'); // Query by accessible `alt` text
     expect(logo).toBeInTheDocument();
-    expect(logo).toHaveAttribute('src', './assets/star.svg');
+    expect(logo).toHaveAttribute('src', '/star.svg');
 
     const link = screen.getByRole('link');
     expect(link).toBeInTheDocument();
